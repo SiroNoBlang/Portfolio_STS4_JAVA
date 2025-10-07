@@ -1,0 +1,1131 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://www.springframework.org/security/tags" prefix="sec"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LHM PORTFOLIO ADMIN</title>
+
+<link rel="stylesheet" href="<c:url value='/css/bootstrap.min.css' />" />
+<link rel="stylesheet" href="<c:url value='/css/font-awesome.css' />" />
+<link rel="stylesheet" href="<c:url value='/css/plugins/toastr/toastr.min.css' />" />
+<link rel="stylesheet" href="<c:url value='/css/animate.css' />" />
+<link rel="stylesheet" href="<c:url value='/css/style.css' />" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body class="top-navigation mini-navbar has-monitoring"
+	data-theme="light">
+	<!-- (has-monitoring) 클래스 필요 -->
+	<!-- body[data-theme] = "light" | "dark" 로 테마를 관리 -->
+	<div id="wrapper">
+		<nav class="navbar-default navbar-static-side" role="navigation">
+			<div class="sidebar-collapse">
+				<ul class="nav metismenu" id="side-menu">
+					<li class="nav-header">
+						<h1 class="nav-logo">
+							<a href="#none" class="logo-link">
+							<img src="<c:url value='/img/@logo.svg' />" alt="logo" class="logo logo1">
+							<img src="<c:url value='/img/@logo2.svg' />" alt="logo" class="logo logo2">
+							</a>
+						</h1>
+					</li>
+					<li><a href="#none"><i class="fa fa-globe"></i> <span
+							class="nav-label">도메인 관리</span> <span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level depth2">
+							<li><a href="#none">도메인 목록</a>
+								<ul class="nav nav-second-level depth3 rows-15">
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+								</ul></li>
+						</ul></li>
+					<li><a href="#none"><i class="fa fa-server"></i> <span
+							class="nav-label">사이트 관리</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse depth2">
+							<li><a href="#none">사이트 목록</a>
+								<ul class="nav nav-second-level depth3">
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+								</ul></li>
+						</ul></li>
+					<li><a href="NO0001.html"><i class="fa fa-sitemap"></i> <span
+							class="nav-label">노드 관리</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse depth2">
+							<li><a href="NO0001.html">노드 목록</a>
+								<ul class="nav nav-second-level depth3">
+									<li><a href="NO0001.html">노드 리스트</a></li>
+									<li><a href="#none">노드 리스트</a></li>
+									<li><a href="#none">노드 리스트</a></li>
+									<li><a href="#none">노드 리스트</a></li>
+									<li><a href="#none">노드 리스트</a></li>
+									<li><a href="#none">노드 리스트</a></li>
+									<li><a href="#none">노드 리스트</a></li>
+									<li><a href="#none">노드 리스트</a></li>
+									<li><a href="#none">노드 리스트</a></li>
+									<li><a href="#none">노드 리스트</a></li>
+									<li><a href="#none">노드 리스트</a></li>
+									<li><a href="#none">노드 리스트</a></li>
+									<li><a href="#none">노드 리스트</a></li>
+									<li><a href="#none">노드 리스트</a></li>
+									<li><a href="#none">노드 리스트</a></li>
+									<li><a href="#none">노드 리스트</a></li>
+								</ul></li>
+						</ul></li>
+					<li class="active"><a href="SE0001.html"><i
+							class="fa fa-tachometer"></i> <span class="nav-label">센서
+								관리</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse">
+							<li class="active"><a href="SE0001.html">센서 목록</a> <!-- depth3 메뉴 노출 개수: <ul class="... depth3 rows-{N}"> (N=1~100, 기본 10) -->
+								<ul class="nav nav-second-level depth3 rows-5">
+									<li class="active"><a href="SE0001.html">센서 리스트</a></li>
+									<li><a href="#none">센서 리스트</a></li>
+									<li><a href="#none">센서 리스트</a></li>
+									<li><a href="#none">센서 리스트</a></li>
+									<li><a href="#none">센서 리스트</a></li>
+									<li><a href="#none">센서 리스트</a></li>
+									<li><a href="#none">센서 리스트</a></li>
+								</ul></li>
+						</ul></li>
+					<li><a href="SY0001.html"><i class="fa fa-cog"></i> <span
+							class="nav-label">설정</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse depth2">
+							<li><a href="SY0001.html">사용자 목록</a></li>
+							<li><a href="SY0002.html">센서 모니터링</a></li>
+							<li><a href="SY0003.html">대시보드</a></li>
+						</ul></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div id="page-wrapper">
+			<div class="row border-bottom navy-bg">
+				<nav class="navbar navbar-expand-lg navbar-static-top"
+					role="navigation">
+					<div class="navbar-header">
+						<!-- <a href="#" class="navbar-brand">logo</a> -->
+					</div>
+					<div class="navbar-collapse collapse" id="navbar">
+						<ul class="nav navbar-nav mr-auto">
+							<li class="dropdown"><a role="button" href="#"
+								class="dropdown-toggle" data-toggle="dropdown">도메인 관리</a>
+								<ul class="dropdown-menu">
+									<li><a href="">도메인 메뉴1</a></li>
+									<li><a href="">도메인 메뉴2</a></li>
+									<li><a href="">도메인 메뉴3</a></li>
+									<li><a href="">도메인 메뉴4</a></li>
+								</ul></li>
+							<li class="dropdown"><a role="button" href="#"
+								class="dropdown-toggle" data-toggle="dropdown">사이트 관리</a>
+								<ul class="dropdown-menu">
+									<li><a href="">사이트 메뉴1</a></li>
+									<li><a href="">사이트 메뉴2</a></li>
+									<li><a href="">사이트 메뉴3</a></li>
+									<li><a href="">사이트 메뉴4</a></li>
+								</ul></li>
+							<li class="dropdown"><a role="button" href="#"
+								class="dropdown-toggle" data-toggle="dropdown">노드 관리</a>
+								<ul class="dropdown-menu">
+									<li><a href="NO0001.html">노드 메뉴1</a></li>
+									<li><a href="">노드 메뉴2</a></li>
+									<li><a href="">노드 메뉴3</a></li>
+									<li><a href="">노드 메뉴4</a></li>
+									<li><a href="">노드 메뉴5</a></li>
+								</ul></li>
+							<li class="dropdown"><a role="button" href="#"
+								class="dropdown-toggle" data-toggle="dropdown">센서 관리</a>
+								<ul class="dropdown-menu">
+									<li><a href="SE0001.html">센서 메뉴1</a></li>
+									<li><a href="">센서 메뉴2</a></li>
+									<li><a href="">센서 메뉴3</a></li>
+									<li><a href="">센서 메뉴4</a></li>
+								</ul></li>
+							<li class="dropdown"><a role="button" href="#"
+								class="dropdown-toggle" data-toggle="dropdown">설정</a>
+								<ul class="dropdown-menu">
+									<li><a href="SY0001.html">사용자 관리</a></li>
+									<li><a href="SY0002.html">센서 모니터링</a></li>
+									<li><a href="SY0003.html">대시보드1</a></li>
+									<li><a href="">대시보드2</a></li>
+								</ul></li>
+						</ul>
+						<ul class="nav navbar-top-links navbar-right">
+							<li><a href="LO0001.html"><i class="fa fa-sign-out"></i>
+									Log out</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+
+			<div class="tmd-wrap">
+				<div class="tmd-header tmd-header--bar">
+					<h2 class="tmd-title">Dashboard</h2>
+					<div class="tmd-clock" id="tmd-clock" aria-live="polite">09:00
+						AM</div>
+					<div class="tmd-toolbar">
+						<button type="button" id="tmd-theme-toggle" class="tmd-btn"
+							aria-pressed="false" aria-label="테마 전환">
+							<i class="fa fa-moon-o" aria-hidden="true"></i><span
+								class="sr-only">Light / Dark</span>
+						</button>
+					</div>
+				</div>
+
+				<div class="tmd-layout">
+					<div class="tmd-list" id="tmd-list">
+						<div class="tmd-card" data-line="DT-G300-56297A">
+							<div class="tmd-label tmd-from">Start</div>
+							<div class="tmd-route">
+								<div class="tmd-track">
+									<div class="tmd-grid">
+										<div class="tmd-row">
+											<!--
+                          상태 구분: unknown|ok|warn|danger (미수신|정상|주의|위험)
+                          상태 적용: .tmd-dotbtn, .tmd-edge (클래스로 상태 표현)
+                          tmd-edge data: data-state, data-from, data-to, data-line (팝오버/로그 메타)
+                          마지막 노드엔 (tmd-pair--last) 클래스 추가
+                          -->
+											<div class="tmd-pair">
+												<div class="tmd-node">
+													<button type="button" class="tmd-dotbtn unknown"
+														aria-pressed="false"></button>
+													<span class="tmd-nlabel">LWAC1F09FFFE0A6AF0</span>
+												</div>
+												<!-- tmd-edge 길이 가이드 (1920~4K, 1rem=16px)
+                              사용법
+                              1) 프리셋(권장): 클래스로 선택 → is-sm | is-md | is-lg
+                                - is-sm ≈ 64px
+                                - is-md ≈ 96px (기본)
+                                - is-lg ≈ 154px / 4K≈192px
+                              2) 직접 지정(선택): width만 바꾸려면 style="--edge-size: <길이>"
+                                - 예) --edge-size: 10rem;  // ≈160px로 고정
+                              3) 하한선 보강(선택): 필요하면 style="--edge-min: <길이>" 추가
+                              주의
+                              - 인라인(--edge-size / --edge-min)이 프리셋보다 우선 적용
+                            -->
+												<div class="tmd-edge unknown is-md" data-state="unknown"
+													data-from="LWAC1F09FFFE0A6AF0" data-to="LWAC1F09FFFE0A6AFC"
+													data-line="15.15464874846593482"
+													style="--edge-size: 10rem;"></div>
+											</div>
+											<div class="tmd-pair">
+												<div class="tmd-node">
+													<button type="button" class="tmd-dotbtn warn"
+														aria-pressed="false"></button>
+													<span class="tmd-nlabel">LWAC1F09FFFE0A6AFC</span>
+												</div>
+												<div class="tmd-edge warn" data-state="warn"
+													data-from="LWAC1F09FFFE0A6AFC" data-to="LWAC1F09FFFE0A6AFB"
+													data-line="270.15464874846593483"></div>
+											</div>
+											<div class="tmd-pair">
+												<div class="tmd-node">
+													<button type="button" class="tmd-dotbtn warn"
+														aria-pressed="false"></button>
+													<span class="tmd-nlabel">LWAC1F09FFFE0A6AFB</span>
+												</div>
+												<div class="tmd-edge warn" data-state="warn"
+													data-from="LWAC1F09FFFE0A6AFB" data-to="LWAC1F09FFFE0A6AFA"
+													data-line="16.15464874846593482"></div>
+											</div>
+											<div class="tmd-pair">
+												<div class="tmd-node">
+													<button type="button" class="tmd-dotbtn danger"
+														aria-pressed="false"></button>
+													<span class="tmd-nlabel">LWAC1F09FFFE0A6AFA</span>
+												</div>
+												<div class="tmd-edge danger" data-state="danger"
+													data-from="LWAC1F09FFFE0A6AFA" data-to="LWAC1F09FFFE0A6AF9"
+													data-line="25.15464874846593482"></div>
+											</div>
+											<div class="tmd-pair">
+												<div class="tmd-node">
+													<button type="button" class="tmd-dotbtn ok"
+														aria-pressed="false"></button>
+													<span class="tmd-nlabel">LWAC1F09FFFE0A6AF9</span>
+												</div>
+												<div class="tmd-edge ok" data-state="ok"
+													data-from="LWAC1F09FFFE0A6AF9" data-to="LWAC1F09FFFE0A6AF8"
+													data-line="301.1546487484653482"></div>
+											</div>
+											<div class="tmd-pair">
+												<div class="tmd-node">
+													<button type="button" class="tmd-dotbtn ok"
+														aria-pressed="false"></button>
+													<span class="tmd-nlabel">LWAC1F09FFFE0A6AF8</span>
+												</div>
+												<div class="tmd-edge ok" data-state="ok"
+													data-from="LWAC1F09FFFE0A6AF8" data-to="LWAC1F09FFFE0A6AF1"
+													data-line="15.15464874846593482"></div>
+											</div>
+											<div class="tmd-pair">
+												<div class="tmd-node">
+													<button type="button" class="tmd-dotbtn warn"
+														aria-pressed="false"></button>
+													<span class="tmd-nlabel">LWAC1F09FFFE0A6AF1</span>
+												</div>
+												<div class="tmd-edge warn is-lg" data-state="warn"
+													data-from="LWAC1F09FFFE0A6AF1" data-to="LWAC1F09FFFE0A6AF7"
+													data-line="15.15464874846593482"></div>
+											</div>
+											<div class="tmd-pair">
+												<div class="tmd-node">
+													<button type="button" class="tmd-dotbtn warn"
+														aria-pressed="false"></button>
+													<span class="tmd-nlabel">LWAC1F09FFFE0A6AF1</span>
+												</div>
+												<div class="tmd-edge warn is-sm" data-state="warn"
+													data-from="LWAC1F09FFFE0A6AF1" data-to="LWAC1F09FFFE0A6AF7"
+													data-line="15.15464874846593482"></div>
+											</div>
+											<div class="tmd-pair tmd-pair--last">
+												<div class="tmd-node">
+													<button type="button" class="tmd-dotbtn warn"
+														aria-pressed="false"></button>
+													<span class="tmd-nlabel">LWAC1F09FFFE0A6AF7</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tmd-label tmd-to">End</div>
+						</div>
+
+						<div class="tmd-card" data-line="DA-G100-56297B">
+							<div class="tmd-label tmd-from">Start</div>
+							<div class="tmd-route">
+								<div class="tmd-track">
+									<div class="tmd-grid">
+										<div class="tmd-row">
+											<!--
+                          상태 구분: unknown|ok|warn|danger (미수신|정상|주의|위험)
+                          상태 적용: .tmd-dotbtn, .tmd-edge (클래스로 상태 표현)
+                          tmd-edge data: data-state, data-from, data-to, data-line (팝오버/로그 메타)
+                          마지막 노드엔 (tmd-pair--last) 클래스 추가
+                          -->
+											<div class="tmd-pair">
+												<div class="tmd-node">
+													<button type="button" class="tmd-dotbtn unknown"
+														aria-pressed="false"></button>
+													<span class="tmd-nlabel">LWAC1F09FFFE0A6AF0</span>
+												</div>
+												<div class="tmd-edge unknown" data-state="unknown"
+													data-from="LWAC1F09FFFE0A6AF0" data-to="LWAC1F09FFFE0A6AFC"
+													data-line="15.15464874846593482"></div>
+											</div>
+											<div class="tmd-pair">
+												<div class="tmd-node">
+													<button type="button" class="tmd-dotbtn warn"
+														aria-pressed="false"></button>
+													<span class="tmd-nlabel">LWAC1F09FFFE0A6AFB</span>
+												</div>
+												<div class="tmd-edge warn" data-state="warn"
+													data-from="LWAC1F09FFFE0A6AFB" data-to="LWAC1F09FFFE0A6AFA"
+													data-line="16.15464874846593482"></div>
+											</div>
+											<div class="tmd-pair">
+												<div class="tmd-node">
+													<button type="button" class="tmd-dotbtn ok"
+														aria-pressed="false"></button>
+													<span class="tmd-nlabel">LWAC1F09FFFE0A6AF9</span>
+												</div>
+												<div class="tmd-edge ok" data-state="ok"
+													data-from="LWAC1F09FFFE0A6AF9" data-to="LWAC1F09FFFE0A6AF8"
+													data-line="301.1546487484653482"></div>
+											</div>
+											<div class="tmd-pair">
+												<div class="tmd-node">
+													<button type="button" class="tmd-dotbtn warn"
+														aria-pressed="false"></button>
+													<span class="tmd-nlabel">LWAC1F09FFFE0A6AF1</span>
+												</div>
+												<div class="tmd-edge warn" data-state="warn"
+													data-from="LWAC1F09FFFE0A6AF1" data-to="LWAC1F09FFFE0A6AF7"
+													data-line="15.15464874846593482"></div>
+											</div>
+											<div class="tmd-pair tmd-pair--last">
+												<div class="tmd-node">
+													<button type="button" class="tmd-dotbtn warn"
+														aria-pressed="false"></button>
+													<span class="tmd-nlabel">LWAC1F09FFFE0A6AF7</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tmd-label tmd-to">End</div>
+						</div>
+
+						<div class="tmd-card" data-line="SE-G200-56297C">
+							<div class="tmd-label tmd-from">Start</div>
+							<div class="tmd-route">
+								<div class="tmd-track">
+									<div class="tmd-grid">
+										<div class="tmd-row">
+											<!--
+                          상태 구분: unknown|ok|warn|danger (미수신|정상|주의|위험)
+                          상태 적용: .tmd-dotbtn, .tmd-edge (클래스로 상태 표현)
+                          tmd-edge data: data-state, data-from, data-to, data-line (팝오버/로그 메타)
+                          마지막 노드엔 (tmd-pair--last) 클래스 추가
+                          -->
+											<div class="tmd-pair">
+												<div class="tmd-node">
+													<button type="button" class="tmd-dotbtn unknown"
+														aria-pressed="false"></button>
+													<span class="tmd-nlabel">LWAC1F09FFFE0A6AF0</span>
+												</div>
+												<div class="tmd-edge unknown" data-state="unknown"
+													data-from="LWAC1F09FFFE0A6AF0" data-to="LWAC1F09FFFE0A6AFC"
+													data-line="15.15464874846593482"></div>
+											</div>
+											<div class="tmd-pair">
+												<div class="tmd-node">
+													<button type="button" class="tmd-dotbtn warn"
+														aria-pressed="false"></button>
+													<span class="tmd-nlabel">LWAC1F09FFFE0A6AFC</span>
+												</div>
+												<div class="tmd-edge warn" data-state="warn"
+													data-from="LWAC1F09FFFE0A6AFC" data-to="LWAC1F09FFFE0A6AFB"
+													data-line="270.15464874846593483"></div>
+											</div>
+											<div class="tmd-pair">
+												<div class="tmd-node">
+													<button type="button" class="tmd-dotbtn warn"
+														aria-pressed="false"></button>
+													<span class="tmd-nlabel">LWAC1F09FFFE0A6AFB</span>
+												</div>
+												<div class="tmd-edge warn" data-state="warn"
+													data-from="LWAC1F09FFFE0A6AFB" data-to="LWAC1F09FFFE0A6AFA"
+													data-line="16.15464874846593482"></div>
+											</div>
+											<div class="tmd-pair">
+												<div class="tmd-node">
+													<button type="button" class="tmd-dotbtn ok"
+														aria-pressed="false"></button>
+													<span class="tmd-nlabel">LWAC1F09FFFE0A6AF1</span>
+												</div>
+												<div class="tmd-edge ok" data-state="ok"
+													data-from="LWAC1F09FFFE0A6AF1" data-to="LWAC1F09FFFE0A6AF7"
+													data-line="15.15464874846593482"></div>
+											</div>
+											<div class="tmd-pair">
+												<div class="tmd-node">
+													<button type="button" class="tmd-dotbtn danger"
+														aria-pressed="false"></button>
+													<span class="tmd-nlabel">LWAC1F09FFFE0A6AF1</span>
+												</div>
+												<div class="tmd-edge danger" data-state="danger"
+													data-from="LWAC1F09FFFE0A6AF1" data-to="LWAC1F09FFFE0A6AF7"
+													data-line="15.15464874846593482"></div>
+											</div>
+											<div class="tmd-pair tmd-pair--last">
+												<div class="tmd-node">
+													<button type="button" class="tmd-dotbtn danger"
+														aria-pressed="false"></button>
+													<span class="tmd-nlabel">LWAC1F09FFFE0A6AF7</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tmd-label tmd-to">End</div>
+						</div>
+					</div>
+
+					<!-- tmd-side -->
+					<div class="tmd-side">
+						<div class="tmd-panel" aria-live="polite">
+							<h3>노드 기본값</h3>
+							<dl class="tmd-kv">
+								<dt>장력</dt>
+								<dd id="tmd-d-line"></dd>
+								<dt>구간</dt>
+								<dd id="tmd-d-seg"></dd>
+								<dt>상태</dt>
+								<dd id="tmd-d-state"></dd>
+								<dt>gw_id</dt>
+								<dd id="tmd-d-gw_id"></dd>
+								<dt>node_id</dt>
+								<dd id="tmd-d-node_id"></dd>
+								<dt>type</dt>
+								<dd id="tmd-d-type"></dd>
+								<dt>period</dt>
+								<dd id="tmd-d-period"></dd>
+								<dt>battery</dt>
+								<dd id="tmd-d-battery"></dd>
+								<dt>fw_ver</dt>
+								<dd id="tmd-d-fw_ver"></dd>
+								<dt>distance</dt>
+								<dd id="tmd-d-distance"></dd>
+								<dt>temperature</dt>
+								<dd id="tmd-d-temperature"></dd>
+								<dt>node_status</dt>
+								<dd id="tmd-d-node_status"></dd>
+								<dt>angle_x</dt>
+								<dd id="tmd-d-angle_x"></dd>
+								<dt>angle_y</dt>
+								<dd id="tmd-d-angle_y"></dd>
+								<dt>angle_z</dt>
+								<dd id="tmd-d-angle_z"></dd>
+								<dt>crack</dt>
+								<dd id="tmd-d-crack"></dd>
+								<dt>soil_moisture_h</dt>
+								<dd id="tmd-d-soil_moisture_h"></dd>
+								<dt>soil_moisture_l</dt>
+								<dd id="tmd-d-soil_moisture_l"></dd>
+								<dt>soil_temperature</dt>
+								<dd id="tmd-d-soil_temperature"></dd>
+								<dt>gps_lock</dt>
+								<dd id="tmd-d-gps_lock"></dd>
+								<dt>gps_lat</dt>
+								<dd id="tmd-d-gps_lat"></dd>
+								<dt>gps_lon</dt>
+								<dd id="tmd-d-gps_lon"></dd>
+								<dt>last_timestamp</dt>
+								<dd id="tmd-d-last_timestamp"></dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Popover -->
+	<div class="tmd-popover" id="tmd-popover" hidden>
+		<div class="tmd-sheet" role="dialog" aria-modal="false"
+			aria-labelledby="tmd-p-title">
+			<div class="thd-shhet-header">
+				<h3 id="tmd-p-title" class="tmd-p-title">노드 기본값</h3>
+				<button class="tmd-close" id="tmd-p-close" aria-label="닫기">✕</button>
+			</div>
+			<dl class="tmd-kv">
+				<dt></dt>
+			</dl>
+		</div>
+	</div>
+	<!-- 
+	<p>
+		<sec:authentication property="principal" />
+	</p>
+	<sec:authorize access="hasRole('AuthType01') and hasRole('AuthType02')">
+		<h4>(최고)관리자님 강령하소성 ~~ 아붕</h4>
+	</sec:authorize>
+	<h1>
+		<sec:authentication property="name" />
+		최고 관리자 / 관리자
+	</h1>
+	<a href="javascript:history.back()">뒤로가깅</a>
+	<form action="/logout">
+		<sec:csrfInput />
+		<button>로그아웃</button>
+	</form>
+ -->
+
+	<!-- libs -->
+	<script src="<c:url value='/js/popper.min.js' />"></script>
+	<script src="<c:url value='/js/bootstrap.js' />"></script>
+	<script src="<c:url value='/js/plugins/metisMenu/jquery.metisMenu.js' />"></script>
+	<script src="<c:url value='/js/plugins/slimscroll/jquery.slimscroll.min.js' />"></script>
+	<script src="<c:url value='/js/inspinia.js' />"></script>
+	<script src="<c:url value='/js/plugins/pace/pace.min.js' />"></script>
+	<script src="<c:url value='/js/plugins/jquery-ui/jquery-ui.min.js' />"></script>
+
+	<!-- Page scripts -->
+	<script>
+    (function ($) {
+      var TMD = window.TMD || {}; window.TMD = TMD;
+
+      /* =======================================================================
+      * Theme Module
+      * ======================================================================= */
+      TMD.Theme = (function () {
+        var KEY = 'tmd-theme';
+        function setTheme(t) {
+          $('body').attr('data-theme', t);
+          try { localStorage.setItem(KEY, t); } catch (e) {}
+          var $btn = $('#tmd-theme-toggle');
+          if (!$btn.length) return;
+          var isDark = (t === 'dark');
+          $btn.attr('aria-pressed', String(isDark));
+          var $icon = $btn.find('i');
+          if ($icon.length) $icon.attr('class', isDark ? 'fa fa-sun-o' : 'fa fa-moon-o');
+        }
+        function loadTheme() {
+          var t = null;
+          try { t = localStorage.getItem(KEY); } catch (e) {}
+          if (!t) t = $('body').attr('data-theme') || 'light';
+          setTheme(t);
+        }
+        function toggleTheme() {
+          var cur = ($('body').attr('data-theme') === 'dark') ? 'dark' : 'light';
+          setTheme(cur === 'dark' ? 'light' : 'dark');
+        }
+        function init(btnSel) {
+          loadTheme();
+          $(document).on('click', btnSel || '#tmd-theme-toggle', toggleTheme);
+        }
+        return { setTheme, loadTheme, toggleTheme, init };
+      })();
+
+      /* =======================================================================
+      * Popover Module
+      * - 단일 팝오버: mode-hover / mode-click 클래스로 UI 차이만 부여
+      * - ❗ rows 우선: payload.rows가 있으면 그걸 "그대로" 렌더 (기본 스키마 무시)
+      * - 기본 스키마는 rows가 없을 때만 사용(hover 요약, click 상세)
+      * - 엣지: hover/클릭 → 팝오버만 (사이드 갱신 안 함)
+      * - 노드: 클릭 → 팝오버 + 사이드 갱신
+      *
+      * [rows 전달 방법 3가지]
+      *  1) 직접 호출: openAt/openByAnchor 의 payload에 rows 포함
+      *     TMD.Popover.openAt(x,y,{ rows:[{dt:'장력',val:'15.154648',state:'warn'}] },'hover');
+      *  2) data-rows 속성(JSON 문자열)로 엘리먼트에 부착 (엣지/노드 모두 가능)
+      *     <div class="tmd-edge" data-rows='[{"dt":"장력","val":"15.154648"}]' ...>
+      *  3) 고정모드에서 나중에 교체: TMD.Popover.update({ rows:[...] }, 'click')
+      * ======================================================================= */
+      TMD.Popover = (function () {
+        var $pop, $sheet, lockMode = false, anchorEl = null, anchorPayload = null;
+
+        var MODE_CLASSES = 'mode-hover mode-click';
+        function setMode(mode) {
+          if (!$pop || !$pop.length) return;
+          $pop.removeClass(MODE_CLASSES);
+          if (mode) $pop.addClass('mode-' + mode);
+        }
+
+        // 공통 상태 라벨
+        function labelOf(s) {
+          return s === 'ok' ? '정상' : s === 'warn' ? '주의' : s === 'danger' ? '위험' : '미수신';
+        }
+        function stateFromClass(el) {
+          if (!el) return 'unknown';
+          var $el = $(el);
+          if ($el.hasClass('danger')) return 'danger';
+          if ($el.hasClass('warn')) return 'warn';
+          if ($el.hasClass('ok')) return 'ok';
+          return 'unknown';
+        }
+
+        // data-rows(JSON) 파싱 유틸
+        function getRowsFromEl($el) {
+          var raw = $el.attr('data-rows');
+          if (!raw) return null;
+          try {
+            var rows = JSON.parse(raw);
+            return Array.isArray(rows) ? rows : null;
+          } catch (e) {
+            return null;
+          }
+        }
+
+        // 엣지 요약 payload (rows가 없을 때 기본 필드로 사용)
+        function getEdgePayload($edge) {
+          var $card = $edge.closest('.tmd-card');
+          return {
+            line : $edge.data('line') || ($card.length ? $card.data('line') : '-') || '-',
+            from : $edge.data('from') || '-',
+            to   : $edge.data('to')   || '-',
+            state: $edge.data('state') || stateFromClass($edge[0]),
+            last : new Date().toLocaleString()
+          };
+        }
+
+        // <dl.tmd-kv> 재구성
+        function renderRows(rows) {
+          var $dl = $sheet.find('.tmd-kv');
+          $dl.empty();
+          rows.forEach(function (r) {
+            if (!r || r.hide) return; // {hide:true} → 스킵
+            var val = (r.val == null || r.val === '') ? '-' : r.val;
+            $dl.append('<dt>' + r.dt + '</dt>');
+            if (r.state) {
+              $dl.append('<dd class="is-' + r.state + '" data-state="' + r.state + '">' + val + '</dd>');
+            } else {
+              $dl.append('<dd>' + val + '</dd>');
+            }
+          });
+        }
+
+        /**
+         * fill(data, mode)
+         * - rows가 있으면 rows만 렌더 (기본 스키마 완전히 무시)
+         * - rows가 없을 때만 모드별 기본 스키마 사용
+         */
+        function fill(data, mode) {
+          var s = data.state || 'unknown';
+
+          // 1) rows 우선(완전 커스텀)
+          if (Array.isArray(data.rows)) {
+            return renderRows(data.rows);
+          }
+
+          // 2) 기본 스키마 (rows 미제공 시에만)
+          if (mode === 'hover') {
+            // Hover 기본 요약 (필요시 자유롭게 조정 가능)
+            return renderRows([
+              { dt: 'tension', val: data.line || '-' }
+            ]);
+          }
+
+          // Click 기본 상세: 요약 + 센서 JSON 매핑
+          var rows = [];
+          if (data.line) rows.push({ dt: '장력', val: data.line });
+          if (data.segment || data.from) {
+            rows.push({ dt: '구간', val: data.segment || (data.from ? (data.from + ' → ' + data.to) : '-') });
+          }
+          rows.push({ dt: '상태', val: labelOf(s), state: s });
+
+          rows.push({ dt: 'gw_id',            val: data.gw_id });
+          rows.push({ dt: 'node_id',          val: data.node_id });
+          rows.push({ dt: 'type',             val: data.type });
+          rows.push({ dt: 'period',           val: data.period });
+          rows.push({ dt: 'battery',          val: data.battery });
+          rows.push({ dt: 'fw_ver',           val: data.fw_ver });
+          rows.push({ dt: 'distance',         val: data.distance });
+          rows.push({ dt: 'temperature',      val: data.temperature });
+          rows.push({ dt: 'node_status',      val: data.node_status });
+          rows.push({ dt: 'angle_x',          val: data.angle_x });
+          rows.push({ dt: 'angle_y',          val: data.angle_y });
+          rows.push({ dt: 'angle_z',          val: data.angle_z });
+          rows.push({ dt: 'crack',            val: data.crack });
+          rows.push({ dt: 'soil_moisture_h',  val: data.soil_moisture_h });
+          rows.push({ dt: 'soil_moisture_l',  val: data.soil_moisture_l });
+          rows.push({ dt: 'soil_temperature', val: data.soil_temperature });
+          rows.push({ dt: 'gps_lock',         val: data.gps_lock });
+          rows.push({ dt: 'gps_lat',          val: data.gps_lat });
+          rows.push({ dt: 'gps_lon',          val: data.gps_lon });
+          rows.push({ dt: 'last_timestamp',   val: data.last_timestamp || data.last });
+
+          return renderRows(rows);
+        }
+
+        // 팝오버 API
+        function openAt(x, y, payload, mode) {
+          fill(payload, mode);
+
+          $pop.prop('hidden', false);
+
+          var margin = 12;                 // 화면 경계 여백
+          var gap = 10;                 // 앵커/커서와의 기본 간격
+          var vW = $(window).width();
+          var vH = $(window).height();
+          var sw = $sheet.outerWidth();
+          var sh = $sheet.outerHeight();
+
+          // 기본: 커서 오른쪽/아래쪽
+          var left = x + gap;
+          var top = y + gap;
+
+          // 가로 넘치면 왼쪽으로 플립
+          var horiz = 'right';
+          if (left + sw + margin > vW) {
+            left = x - sw - gap;
+            horiz = 'left';
+          }
+          // 다시 좌측 경계 넘어가면 화면 안으로 클램프
+          if (left < margin) left = Math.max(margin, vW - sw - margin);
+
+          // 세로 넘치면 위로 플립
+          var vert = 'below';
+          if (top + sh + margin > vH) {
+            top = y - sh - gap;
+            vert = 'above';
+          }
+          // 다시 위쪽 경계 넘어가면 화면 안으로 클램프
+          if (top < margin) top = Math.max(margin, vH - sh - margin);
+
+          // 위치 적용
+          $sheet.css({ top: top, left: left });
+
+          // (옵션) 방향 클래스 세팅: 스타일로 화살표 방향 다르게 하고 싶을 때 사용
+          $pop.removeClass('pos-above pos-below pos-left pos-right')
+            .addClass(vert === 'above' ? 'pos-above' : 'pos-below')
+            .addClass(horiz === 'left' ? 'pos-left' : 'pos-right');
+        }
+
+        function openByAnchor(anchor, payload, mode) {
+          fill(payload, mode);
+
+          $pop.prop('hidden', false);
+
+          var r = anchor.getBoundingClientRect();
+          var margin = 12;                 // 화면 경계 여백
+          var gap = 10;                 // 앵커와의 기본 간격
+          var vW = $(window).width();
+          var vH = $(window).height();
+          var sw = $sheet.outerWidth();
+          var sh = $sheet.outerHeight();
+
+          // 기본: 앵커 오른쪽, 앵커 top 맞춤
+          var left = r.left + r.width + gap;
+          var top = Math.max(margin, r.top - 6);
+
+          // 가로 넘치면 앵커 왼쪽으로 플립
+          var horiz = 'right';
+          if (left + sw + margin > vW) {
+            left = r.left - sw - gap;
+            horiz = 'left';
+          }
+          if (left < margin) left = Math.max(margin, vW - sw - margin);
+
+          // 세로 넘치면 앵커 “위쪽 정렬”로 플립 (팝오버 하단이 앵커 근처에 오도록)
+          var vert = 'below';
+          if (top + sh + margin > vH) {
+            top = r.bottom - sh + 6;     // 앵커 아래쪽 기준으로 위로 붙이기
+            vert = 'above';
+          }
+          // 그래도 넘치면 화면 안으로 클램프
+          if (top < margin) top = Math.max(margin, vH - sh - margin);
+
+          // 위치 적용
+          $sheet.css({ top: top, left: left });
+
+          // (옵션) 방향 클래스
+          $pop.removeClass('pos-above pos-below pos-left pos-right')
+            .addClass(vert === 'above' ? 'pos-above' : 'pos-below')
+            .addClass(horiz === 'left' ? 'pos-left' : 'pos-right');
+        }
+
+        function saveAnchor(anchor, payload) {
+          anchorEl = anchor;
+          anchorPayload = payload;
+          lockMode = true;
+        }
+        function restoreAnchor() {
+          if (lockMode && anchorEl) {
+            setMode('click');
+            openByAnchor(anchorEl, anchorPayload, 'click');
+          }
+        }
+        function close() {
+          lockMode = false;
+          anchorEl = null;
+          anchorPayload = null;
+          setMode(null);
+          $pop.prop('hidden', true);
+        }
+
+        /**
+         * update(payload, mode?)
+         * - 고정(클릭) 상태에서 rows나 값들을 교체하고 즉시 리렌더하고 싶을 때 사용
+         *   예) AJAX 완료 후: TMD.Popover.update({ rows: [...] }, 'click');
+         */
+        function update(payload, mode) {
+          if (!anchorPayload) anchorPayload = {};
+          anchorPayload = $.extend({}, anchorPayload, payload || {});
+          var m = mode || ($pop && $pop.hasClass('mode-click') ? 'click' : 'hover');
+          if (!$pop.prop('hidden')) {
+            fill(anchorPayload, m);
+          }
+        }
+
+        function bind() {
+          // ── 엣지: hover → 팝오버만 갱신 ─────────────────────────────────────────
+          $(document)
+            .on('mouseenter', '.tmd-edge', function (e) {
+              if (lockMode) return close(); // 고정모드 중 hover는 닫기(옵션)
+              setMode('hover');
+              var $edge = $(this);
+              var rows = getRowsFromEl($edge);
+              var base = getEdgePayload($edge);
+              var payload = rows ? { rows: rows } : $.extend({}, base, { segment: base.from + ' → ' + base.to });
+              openAt(e.clientX, e.clientY, payload, 'hover');
+            })
+            .on('mousemove', '.tmd-edge', function (e) {
+              if ($pop.prop('hidden')) return;
+              $sheet.css({ top: e.clientY + 10, left: Math.min($(window).width() - 300, e.clientX + 12) });
+            })
+            .on('mouseleave', '.tmd-edge', function () {
+              if (lockMode) { setMode('click'); restoreAnchor(); }
+              else { setMode(null); $pop.prop('hidden', true); }
+            })
+
+          // ── 노드: 클릭 → 팝오버(클릭) + 사이드 갱신 ─────────────────────────────
+          $(document).on('click', '.tmd-node', function () {
+            var $node = $(this), $btn = $node.find('.tmd-dotbtn');
+            var seg = $.trim($node.find('.tmd-nlabel').text());
+            var line = $node.closest('.tmd-card').data('line') || '-';
+            var m = ($btn.attr('class') || '').match(/\b(ok|warn|danger|unknown)\b/);
+            var state = (m && m[1]) ? m[1] : 'unknown';
+
+            var rows = getRowsFromEl($node); // 노드에 data-rows 있으면 사용
+            var payload = rows
+              ? { rows: rows, line: line, segment: seg, state: state, last: new Date().toLocaleString() }
+              : { line: line, segment: seg, state: state, last: new Date().toLocaleString() };
+
+            saveAnchor($btn[0] || this, payload);
+            setMode('click');
+            openByAnchor(anchorEl, anchorPayload, 'click'); // 팝오버
+            TMD.SidePanel.fill(payload);                    // 사이드 갱신
+          });
+
+          // 팝오버 닫기
+          $(document).on('click', '#tmd-p-close', close);
+          $(document).on('keydown', function (e) { if (e.key === 'Escape') close(); });
+          $(document).on('mousedown', function (e) {
+            if (!$pop.prop('hidden') && !$sheet[0].contains(e.target)) close();
+          });
+        }
+
+        function init() {
+          $pop = $('#tmd-popover');
+          $sheet = $pop.find('.tmd-sheet');
+          bind();
+        }
+
+        return { init, openAt, openByAnchor, close, update };
+      })();
+
+      /* =======================================================================
+      * Side Panel Module
+      * - fill(payload, sensor?)
+      *   · payload: { line, segment?, from?, to?, state?, last?, rows? }
+      *   · sensor : { gw_id~last_timestamp } (없으면 sampleSensor 사용)
+      * - 사이드에 상태 표시를 원하면 dd#tmd-d-state가 마크업에 있어야 함
+      * ======================================================================= */
+      TMD.SidePanel = (function () {
+        function labelOf(s) {
+          return s === 'ok' ? '정상' : s === 'warn' ? '주의' : s === 'danger' ? '위험' : '미수신';
+        }
+        function setStateClass($el, state) {
+          var st = (state === 'ok' || state === 'warn' || state === 'danger') ? state : 'unknown';
+          $el.removeClass('is-ok is-warn is-danger is-unknown')
+            .addClass('is-' + st)
+            .attr('data-state', st);
+        }
+        function sampleSensor() {
+          return {
+            gw_id: '',
+            node_id: '',
+            type: '',
+            period: '',
+            battery: '',
+            fw_ver: '',
+            distance: '',
+            temperature: '',
+            node_status: '',
+            angle_x: '',
+            angle_y: '',
+            angle_z: '',
+            crack: '',
+            soil_moisture_h: '',
+            soil_moisture_l: '',
+            soil_temperature: '',
+            gps_lock: '',
+            gps_lat: '',
+            gps_lon: '',
+            last_timestamp: ''
+          };
+        }
+
+        function fill(payload, sensor) {
+          if (!payload) return;
+
+          // Line, Segment, State 정보 처리
+          $('#tmd-d-line').text(payload.line || '-');
+          $('#tmd-d-seg').text(payload.segment || (payload.from ? (payload.from + ' → ' + payload.to) : '-'));
+
+          var $st = $('#tmd-d-state');
+          if ($st.length && Object.prototype.hasOwnProperty.call(payload, 'state')) {
+            var state = payload.state || 'unknown';
+            $st.text(labelOf(state));
+            setStateClass($st, state);
+          }
+
+          // 센서 정보 처리
+          var s = sensor || sampleSensor();
+
+          $('#tmd-d-gw_id').text(s.gw_id);
+          $('#tmd-d-node_id').text(s.node_id);
+          $('#tmd-d-type').text(s.type);
+          $('#tmd-d-period').text(s.period);
+          $('#tmd-d-battery').text(s.battery);
+          $('#tmd-d-fw_ver').text(s.fw_ver);
+          $('#tmd-d-distance').text(s.distance);
+          $('#tmd-d-temperature').text(s.temperature);
+          $('#tmd-d-node_status').text(s.node_status);
+          $('#tmd-d-angle_x').text(s.angle_x);
+          $('#tmd-d-angle_y').text(s.angle_y);
+          $('#tmd-d-angle_z').text(s.angle_z);
+          $('#tmd-d-crack').text(s.crack);
+          $('#tmd-d-soil_moisture_h').text(s.soil_moisture_h);
+          $('#tmd-d-soil_moisture_l').text(s.soil_moisture_l);
+          $('#tmd-d-soil_temperature').text(s.soil_temperature);
+          $('#tmd-d-gps_lock').text(s.gps_lock);
+          $('#tmd-d-gps_lat').text(s.gps_lat);
+          $('#tmd-d-gps_lon').text(s.gps_lon);
+          $('#tmd-d-last_timestamp').text(s.last_timestamp);
+        }
+
+        function bind() {
+          if (!$('.tmd-side .tmd-panel').length) return;
+          // 엣지에서는 사이드 갱신하지 않음
+          // 노드 클릭 시에만 사이드 갱신
+          $(document).on('click', '.tmd-node', function () {
+            var $node = $(this), $btn = $node.find('.tmd-dotbtn');
+            var seg  = $.trim($node.find('.tmd-nlabel').text());
+            var line = $node.closest('.tmd-card').data('line') || '-';
+            // dot 버튼 클래스에서 상태 추출 (ok|warn|danger|unknown)
+            var m = ($btn.attr('class') || '').match(/\b(ok|warn|danger|unknown)\b/);
+            var state = (m && m[1]) ? m[1] : 'unknown';
+            // 팝오버와 동일한 state/last를 사이드에도 반영
+            TMD.SidePanel.fill({
+              line: line,
+              segment: seg,
+              state: state,
+              last: new Date().toLocaleString()
+            });
+          });
+        }
+
+        return { init: bind, fill, sample: sampleSensor };
+      })();
+
+      /* =======================================================================
+      * Init
+      * ======================================================================= */
+      TMD.Theme.init('#tmd-theme-toggle');
+      TMD.Popover.init();
+      TMD.SidePanel.init();
+
+      // Header Clock (Asia/Seoul)
+      (function () {
+        var $el = $('#tmd-clock');
+        if (!$el.length) return;
+        var fmt = new Intl.DateTimeFormat('ko-KR', {
+          hour: '2-digit', minute: '2-digit', second: '2-digit',
+          hour12: false, timeZone: 'Asia/Seoul'
+        });
+        function tick() { $el.text(fmt.format(new Date())); }
+        tick();
+        window.setInterval(tick, 1000);
+      })();
+    })(jQuery);
+  </script>
+
+</body>
+</html>

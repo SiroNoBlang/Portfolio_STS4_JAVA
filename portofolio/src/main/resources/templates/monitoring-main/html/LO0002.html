@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tension Monitoring | 비밀번호 등록</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="gray-bg">
+    <div class="middle-box loginscreen animated fadeInUp">
+        <div class="login-title">
+            <img src="img/@logo_login.svg" alt="" style="width: 200px; height: auto;"> <!-- 임시 로고 삽입(이미지 사이즈 inline 스타일 width/height값으로 조정) -->
+            <!-- <h2>TENSION MONITORING</h2> -->
+        </div>
+        <div class="ibox">
+           <div class="ibox-title">
+                <!-- <h3><span>Login</span><br>DB Manager Programs</h3> -->
+                <h3><span>Tension Monitoring</span><br>DB Manager Programs</h3> <!-- 임시 서브 타이틀 -->
+            </div>
+            <div class="ibox-content">
+                <form class="login-form" role="form" action="M0001.html">
+                    <div class="form-group">
+                        <label for="inp01" class="col-form-label">새 비밀번호</label>
+                        <input type="password" id="inp01" class="form-control" maxlength="15" placeholder="새 비밀번호 입력" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inp02" class="col-form-label">PASSWORD</label>
+                        <input type="password" id="inp02" class="form-control" maxlength="15" placeholder="비밀번호 확인" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inp03" class="col-form-label">OTP 인증코드</label>
+                        <input type="text" id="inp03" class="form-control" inputmode="numeric" pattern="[0-9]*" placeholder="OTP 인증코드 입력" required>
+                        <span class="form-text m-b-none text-danger">비밀번호는 영어 대문자, 소문자, 특수문자, 숫자가 포함된 8-15자리 이어야 합니다.</span>
+                    </div>
+                    <div class="btn-group login-bottom">
+                        <button type="button" class="btn btn-outline btn-default" onclick="location.href='LO0001.html'">취소</button>
+                        <button type="button" class="btn btn-outline btn-primary">OTP 등록</button>
+                        <button type="button" class="btn btn-primary flex3">비밀번호 변경</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

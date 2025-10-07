@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.portfolio.lhm.mapper.UserMapper">
+	
+	<resultMap id="userMap" type="UserVO">
+	    <result property="userId" column="USER_ID"/>
+	    <result property="userPw" column="USER_PW"/>
+	    <result property="userNm" column="USER_NM"/>
+	    <result property="status" column="STATUS"/>
+	    <result property="loginDt" column="LOGIN_DT"/>
+	    <result property="regDt" column="REG_DT"/>
+	    <collection property="authList" resultMap="authMap" />
+	</resultMap>
+	
+	<resultMap type="AuthVO" id="authMap">
+		<result column="USER_ID" property="userId" />
+		<result column="AUTH_NM" property="authNm" />
+	</resultMap>
+	
+	<insert id="insertUser" parameterType="UserVO">
+		INSERT INTO TB_USER ( USER_ID
+							, USER_NM
+							, USER_PW )
+		VALUES ( #{userId}
+			   , #{userNm}
+			   , #{userPw} )
+	</insert>
+
+	<insert id="insertAuth" parameterType="AuthVO">
+		INSERT INTO TB_AUTHS ( USER_ID
+							 , AUTH_NM )
+		VALUES ( #{userId}
+			   , #{authNm} )
+	</insert>
+
+	<select id="selectUser" parameterType="string" resultMap="userMap">
+		SELECT TU.USER_ID AS USER_ID
+			 , TU.USER_PW AS USER_PW
+			 , TU.USER_NM AS USER_NM
+			 , TU.STATUS AS STATUS
+			 , TU.LOGIN_DT AS LOGIN_DT
+			 , TU.REG_DT AS REG_DT
+			 , TA.AUTH_NM AS AUTH_NM
+		  FROM TB_USER TU
+		  JOIN TB_AUTHS TA
+			ON TU.USER_ID = TA.USER_ID
+		 WHERE TU.USER_ID = #{userId}
+	</select>
+
+	<select id="userList" parameterType="map" resultType="com.portfolio.lhm.vo.UserVO">
+		SELECT USER_ID
+			 , USER_NM
+			 , STATUS
+			 , REG_DT
+		  FROM TB_USER
+		 WHERE 1=1
+		 <if test="userId != null and userId != ''">
+			 AND USER_ID LIKE CONCAT('%', #{userId}, '%')
+		 </if>
+		 <if test="userNm != null and userNm != ''">
+			 AND USER_NM LIKE CONCAT('%', #{userNm}, '%')
+		 </if>
+		 <if test="startRegDt != null and startRegDt != ''">
+			 AND REG_DT &gt;= #{startRegDt}
+		 </if>
+		 <if test="endRegDt != null and endRegDt != ''">
+			 AND REG_DT &lt;= #{endRegDt}
+		 </if>
+	</select>
+
+</mapper>

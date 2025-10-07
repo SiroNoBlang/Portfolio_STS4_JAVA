@@ -1,0 +1,2004 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://www.springframework.org/security/tags"
+	prefix="sec"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LHM PORTFOLIO SITE ADMIN</title>
+
+<link rel="stylesheet" href="<c:url value='/css/bootstrap.min.css' />" />
+<link rel="stylesheet" href="<c:url value='/css/font-awesome.css' />" />
+<link rel="stylesheet"
+	href="<c:url value='/css/plugins/sweetalert/sweetalert.css' />" />
+<link rel="stylesheet"
+	href="<c:url value='/css/plugins/toastr/toastr.min.css' />" />
+<link rel="stylesheet" href="<c:url value='/css/animate.css' />" />
+<link rel="stylesheet" href="<c:url value='/css/style.css' />" />
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body class="top-navigation mini-navbar has-monitoring"
+	data-theme="light">
+	<!-- (has-monitoring) 클래스 필요 -->
+	<!-- body[data-theme] = "light" | "dark" 로 테마를 관리 -->
+	<div id="wrapper">
+		<nav class="navbar-default navbar-static-side" role="navigation">
+			<div class="sidebar-collapse">
+				<ul class="nav metismenu" id="side-menu">
+					<li class="nav-header">
+						<h1 class="nav-logo">
+							<a href="#none" class="logo-link"> <img src="img/@logo.svg"
+								alt="logo" class="logo logo1"> <img src="img/@logo2.svg"
+								alt="logo" class="logo logo2">
+							</a>
+						</h1>
+					</li>
+					<li><a href="#none"><i class="fa fa-globe"></i> <span
+							class="nav-label">도메인 관리</span> <span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level depth2">
+							<li><a href="#none">도메인 목록</a>
+								<ul class="nav nav-second-level depth3 rows-15">
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+									<li><a href="#none">도메인 리스트</a></li>
+								</ul></li>
+						</ul></li>
+					<li><a href="#none"><i class="fa fa-server"></i> <span
+							class="nav-label">사이트 관리</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse depth2">
+							<li><a href="#none">사이트 목록</a>
+								<ul class="nav nav-second-level depth3">
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+									<li><a href="#none">사이트 리스트</a></li>
+								</ul></li>
+						</ul></li>
+					<li><a href="NO0001.html"><i class="fa fa-sitemap"></i> <span
+							class="nav-label">노드 관리</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse depth2">
+							<li><a href="NO0001.html">노드 목록</a>
+								<ul class="nav nav-second-level depth3">
+									<li><a href="NO0001.html">노드 리스트</a></li>
+									<li><a href="#none">노드 리스트</a></li>
+									<li><a href="#none">노드 리스트</a></li>
+									<li><a href="#none">노드 리스트</a></li>
+									<li><a href="#none">노드 리스트</a></li>
+									<li><a href="#none">노드 리스트</a></li>
+									<li><a href="#none">노드 리스트</a></li>
+									<li><a href="#none">노드 리스트</a></li>
+									<li><a href="#none">노드 리스트</a></li>
+									<li><a href="#none">노드 리스트</a></li>
+									<li><a href="#none">노드 리스트</a></li>
+									<li><a href="#none">노드 리스트</a></li>
+									<li><a href="#none">노드 리스트</a></li>
+									<li><a href="#none">노드 리스트</a></li>
+									<li><a href="#none">노드 리스트</a></li>
+									<li><a href="#none">노드 리스트</a></li>
+								</ul></li>
+						</ul></li>
+					<li class="active"><a href="SE0001.html"><i
+							class="fa fa-tachometer"></i> <span class="nav-label">센서
+								관리</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse">
+							<li class="active"><a href="SE0001.html">센서 목록</a> <!-- depth3 메뉴 노출 개수: <ul class="... depth3 rows-{N}"> (N=1~100, 기본 10) -->
+								<ul class="nav nav-second-level depth3 rows-5">
+									<li class="active"><a href="SE0001.html">센서 리스트</a></li>
+									<li><a href="#none">센서 리스트</a></li>
+									<li><a href="#none">센서 리스트</a></li>
+									<li><a href="#none">센서 리스트</a></li>
+									<li><a href="#none">센서 리스트</a></li>
+									<li><a href="#none">센서 리스트</a></li>
+									<li><a href="#none">센서 리스트</a></li>
+								</ul></li>
+						</ul></li>
+					<li><a href="SY0001.html"><i class="fa fa-cog"></i> <span
+							class="nav-label">설정</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse depth2">
+							<li><a href="SY0001.html">사용자 목록</a></li>
+							<li><a href="SY0002.html">센서 모니터링</a></li>
+							<li><a href="SY0003.html">대시보드</a></li>
+						</ul></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div id="page-wrapper">
+			<div class="row border-bottom navy-bg">
+				<nav class="navbar navbar-expand-lg navbar-static-top"
+					role="navigation">
+					<div class="navbar-header">
+						<a href="#" class="navbar-brand">logo</a>
+					</div>
+					<div class="navbar-collapse collapse" id="navbar">
+						<ul class="nav navbar-nav mr-auto">
+							<li class="dropdown"><a aria-expanded="false" role="button"
+								href="#" class="dropdown-toggle" data-toggle="dropdown">도메인
+									관리</a>
+								<ul role="menu" class="dropdown-menu">
+									<li><a href="#none">도메인 메뉴1</a></li>
+									<li><a href="#none">도메인 메뉴2</a></li>
+									<li><a href="#none">도메인 메뉴3</a></li>
+									<li><a href="#none">도메인 메뉴4</a></li>
+								</ul></li>
+							<li class="dropdown"><a aria-expanded="false" role="button"
+								href="#" class="dropdown-toggle" data-toggle="dropdown">사이트
+									관리</a>
+								<ul role="menu" class="dropdown-menu">
+									<li><a href="#none">사이트 메뉴1</a></li>
+									<li><a href="#none">사이트 메뉴2</a></li>
+									<li><a href="#none">사이트 메뉴3</a></li>
+									<li><a href="#none">사이트 메뉴4</a></li>
+								</ul></li>
+							<li class="dropdown"><a aria-expanded="false" role="button"
+								href="#" class="dropdown-toggle" data-toggle="dropdown">노드
+									관리</a>
+								<ul role="menu" class="dropdown-menu">
+									<li><a href="NO0001.html">노드 메뉴1</a></li>
+									<li><a href="#none">노드 메뉴2</a></li>
+									<li><a href="#none">노드 메뉴3</a></li>
+									<li><a href="#none">노드 메뉴4</a></li>
+								</ul></li>
+							<li class="dropdown"><a aria-expanded="false" role="button"
+								href="#" class="dropdown-toggle" data-toggle="dropdown">센서
+									관리</a>
+								<ul role="menu" class="dropdown-menu">
+									<li><a href="SE0001.html">센서 메뉴1</a></li>
+									<li><a href="#none">센서 메뉴2</a></li>
+									<li><a href="#none">센서 메뉴3</a></li>
+									<li><a href="#none">센서 메뉴4</a></li>
+								</ul></li>
+							<li class="dropdown"><a aria-expanded="false" role="button"
+								href="#" class="dropdown-toggle" data-toggle="dropdown">설정</a>
+								<ul role="menu" class="dropdown-menu">
+									<li><a href="SY0001.html">사용자 관리</a></li>
+									<li class="active"><a href="SY0002.html">센서 모니터링</a></li>
+									<li><a href="SY0003.html">대시보드</a></li>
+								</ul></li>
+						</ul>
+						<ul class="nav navbar-top-links navbar-right">
+							<li><a href="LO0001.html"> <i class="fa fa-sign-out"></i>
+									Log out
+							</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+
+			<div class="tmd-wrap">
+				<div class="tmd-header tmd-header--bar">
+					<h2 class="tmd-title">Monitoring</h2>
+					<div class="tmd-toolbar">
+						<button id="alert1" class="tmd-btn btn btn-primary btn-sm">Alert</button>
+						<button type="button" class="tmd-btn" data-toggle="modal"
+							data-target="#modal_inputUpdate">Modal</button>
+						<button type="button" class="tmd-btn" data-toggle="modal"
+							data-target="#popupSetTime2">
+							<i class="fa fa-clock-o" aria-hidden="true"></i><span
+								class="ml-1">시간 설정</span>
+						</button>
+						<button type="button" class="tmd-btn" data-toggle="modal"
+							data-target="#popupSetTime1">
+							<i class="fa fa-clock-o" aria-hidden="true"></i><span
+								class="ml-1">시간 설정(small)</span>
+						</button>
+						<button type="button" id="tmd-theme-toggle" class="tmd-btn"
+							aria-pressed="false" aria-label="테마 전환">
+							<i class="fa fa-moon-o" aria-hidden="true"></i><span
+								class="sr-only">Light / Dark</span>
+						</button>
+					</div>
+				</div>
+
+				<div class="tmd-accordion accordion" id="tmd-acc-list">
+					<div class="tmd-acc-item card card-sensor">
+						<div class="tmd-acc-head card-header">
+							<div class="tmd-card" data-line="부산역 - 사하">
+								<div class="tmd-bookmark">
+									<button type="button" class="btn btn-bookmark">
+										<i class="fa fa-heart-o" aria-hidden="true"></i><span
+											class="sr-only">즐겨찾기</span>
+									</button>
+								</div>
+								<div class="tmd-route">
+									<div class="tmd-track">
+										<div class="tmd-grid">
+											<div class="tmd-row">
+												<!--
+                          상태 구분: unknown|ok|warn|danger (미수신|정상|주의|위험)
+                          상태 적용: .tmd-dotbtn, .tmd-edge (클래스로 상태 표현)
+                          tmd-edge data: data-state, data-from, data-to, data-line (팝오버/로그 메타)
+                          마지막 노드엔 (tmd-pair--last) 클래스 추가
+                          -->
+												<div class="tmd-pair tmd-pair--title">DT-G300-56297A</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="tmd-utill">
+									<div class="tmd-status">위험</div>
+									<button type="button" class="btn btn-acco"
+										data-toggle="collapse" data-target="#acc-body-1"
+										aria-expanded="false" aria-controls="acc-body-1">
+										<i class="fa fa-angle-down ml-1"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div id="acc-body-1" class="tmd-acc-body collapse show"
+							data-parent="#tmd-acc-list">
+							<div class="tmd-acc-panel card-body">
+								<div class="tmd-sgrid" id="tmd-acc-sensor-1">
+									<!-- 상태 카드 1 : danger -->
+									<div class="tmd-scard danger">
+										<div class="tmd-scard__head">
+											<h4 class="tmd-scard__title">LRDTW100250700001234</h4>
+											<span class="tmd-scard__badge" data-toggle="collapse"
+												data-target="#acc-card-1" aria-expanded="false"
+												aria-controls="acc-card-1"> <i class="fa fa-bell-o"
+												aria-hidden="true"></i>
+											</span>
+										</div>
+										<p class="tmd-scard__route">LANDSLIDE(Type9)</p>
+										<dl class="tmd-scard__meta collapse" id="acc-card-1">
+											<div>
+												<dt>type</dt>
+												<dd>1</dd>
+											</div>
+											<div>
+												<dt>period</dt>
+												<dd>600</dd>
+											</div>
+											<div>
+												<dt>battery</dt>
+												<dd>3.6</dd>
+											</div>
+											<div>
+												<dt>fw_ver</dt>
+												<dd>1.23</dd>
+											</div>
+											<div>
+												<dt>distance</dt>
+												<dd>155</dd>
+											</div>
+											<div>
+												<dt>temperature</dt>
+												<dd>25.4</dd>
+											</div>
+										</dl>
+									</div>
+
+									<!-- 상태 카드 2 : warn -->
+									<div class="tmd-scard warn">
+										<div class="tmd-scard__head">
+											<h4 class="tmd-scard__title">WRDTW100250700001234</h4>
+											<span class="tmd-scard__badge" data-toggle="collapse"
+												data-target="#acc-card-2" aria-expanded="false"
+												aria-controls="acc-card-2"> <i
+												class="fa fa-exclamation" aria-hidden="true"></i>
+											</span>
+										</div>
+										<p class="tmd-scard__route">RAIL</p>
+										<dl class="tmd-scard__meta collapse" id="acc-card-2">
+											<div>
+												<dt>type</dt>
+												<dd>1</dd>
+											</div>
+											<div>
+												<dt>period</dt>
+												<dd>600</dd>
+											</div>
+											<div>
+												<dt>battery</dt>
+												<dd>3.6</dd>
+											</div>
+											<div>
+												<dt>fw_ver</dt>
+												<dd>1.23</dd>
+											</div>
+											<div>
+												<dt>distance</dt>
+												<dd>155</dd>
+											</div>
+											<div>
+												<dt>temperature</dt>
+												<dd>25.4</dd>
+											</div>
+										</dl>
+									</div>
+
+									<div class="tmd-scard warn">
+										<div class="tmd-scard__head">
+											<h4 class="tmd-scard__title">WRDTW100250700001234</h4>
+											<span class="tmd-scard__badge" data-toggle="collapse"
+												data-target="#acc-card-3" aria-expanded="false"
+												aria-controls="acc-card-3"> <i
+												class="fa fa-exclamation" aria-hidden="true"></i>
+											</span>
+										</div>
+										<p class="tmd-scard__route">RAIL</p>
+										<dl class="tmd-scard__meta collapse" id="acc-card-3">
+											<div>
+												<dt>type</dt>
+												<dd>1</dd>
+											</div>
+											<div>
+												<dt>period</dt>
+												<dd>600</dd>
+											</div>
+											<div>
+												<dt>battery</dt>
+												<dd>3.6</dd>
+											</div>
+											<div>
+												<dt>fw_ver</dt>
+												<dd>1.23</dd>
+											</div>
+											<div>
+												<dt>distance</dt>
+												<dd>155</dd>
+											</div>
+											<div>
+												<dt>temperature</dt>
+												<dd>25.4</dd>
+											</div>
+										</dl>
+									</div>
+
+									<div class="tmd-scard warn">
+										<div class="tmd-scard__head">
+											<h4 class="tmd-scard__title">WRDTW100250700001234</h4>
+											<span class="tmd-scard__badge" data-toggle="collapse"
+												data-target="#acc-card-4" aria-expanded="false"
+												aria-controls="acc-card-4"> <i
+												class="fa fa-exclamation" aria-hidden="true"></i>
+											</span>
+										</div>
+										<p class="tmd-scard__route">RAIL</p>
+										<dl class="tmd-scard__meta collapse" id="acc-card-4">
+											<div>
+												<dt>type</dt>
+												<dd>1</dd>
+											</div>
+											<div>
+												<dt>period</dt>
+												<dd>600</dd>
+											</div>
+											<div>
+												<dt>battery</dt>
+												<dd>3.6</dd>
+											</div>
+											<div>
+												<dt>fw_ver</dt>
+												<dd>1.23</dd>
+											</div>
+											<div>
+												<dt>distance</dt>
+												<dd>155</dd>
+											</div>
+											<div>
+												<dt>temperature</dt>
+												<dd>25.4</dd>
+											</div>
+										</dl>
+									</div>
+
+									<!-- 상태 카드 3 : ok -->
+									<div class="tmd-scard ok">
+										<div class="tmd-scard__head">
+											<h4 class="tmd-scard__title">SEDTW100250700001234</h4>
+											<span class="tmd-scard__badge" data-toggle="collapse"
+												data-target="#acc-card-5" aria-expanded="false"
+												aria-controls="acc-card-5"> <i class="fa fa-check"
+												aria-hidden="true"></i>
+											</span>
+										</div>
+										<p class="tmd-scard__route">RAIL</p>
+										<dl class="tmd-scard__meta collapse" id="acc-card-5">
+											<div>
+												<dt>type</dt>
+												<dd>1</dd>
+											</div>
+											<div>
+												<dt>period</dt>
+												<dd>600</dd>
+											</div>
+											<div>
+												<dt>battery</dt>
+												<dd>3.6</dd>
+											</div>
+											<div>
+												<dt>fw_ver</dt>
+												<dd>1.23</dd>
+											</div>
+											<div>
+												<dt>distance</dt>
+												<dd>155</dd>
+											</div>
+											<div>
+												<dt>temperature</dt>
+												<dd>25.4</dd>
+											</div>
+										</dl>
+									</div>
+
+									<div class="tmd-scard ok">
+										<div class="tmd-scard__head">
+											<h4 class="tmd-scard__title">SEDTW100250700001234</h4>
+											<span class="tmd-scard__badge" data-toggle="collapse"
+												data-target="#acc-card-6" aria-expanded="false"
+												aria-controls="acc-card-6"> <i class="fa fa-check"
+												aria-hidden="true"></i>
+											</span>
+										</div>
+										<p class="tmd-scard__route">RAIL</p>
+										<dl class="tmd-scard__meta collapse" id="acc-card-6">
+											<div>
+												<dt>type</dt>
+												<dd>1</dd>
+											</div>
+											<div>
+												<dt>period</dt>
+												<dd>600</dd>
+											</div>
+											<div>
+												<dt>battery</dt>
+												<dd>3.6</dd>
+											</div>
+											<div>
+												<dt>fw_ver</dt>
+												<dd>1.23</dd>
+											</div>
+											<div>
+												<dt>distance</dt>
+												<dd>155</dd>
+											</div>
+											<div>
+												<dt>temperature</dt>
+												<dd>25.4</dd>
+											</div>
+										</dl>
+									</div>
+
+									<!-- 상태 카드 4 : unknown -->
+									<div class="tmd-scard unknown">
+										<div class="tmd-scard__head">
+											<h4 class="tmd-scard__title">SEDTW100250700001234</h4>
+											<span class="tmd-scard__badge" data-toggle="collapse"
+												data-target="#acc-card-7" aria-expanded="false"
+												aria-controls="acc-card-7"> <i class="fa fa-times"
+												aria-hidden="true"></i>
+											</span>
+										</div>
+										<p class="tmd-scard__route">RAIL</p>
+										<dl class="tmd-scard__meta collapse" id="acc-card-7">
+											<div>
+												<dt>type</dt>
+												<dd>1</dd>
+											</div>
+											<div>
+												<dt>period</dt>
+												<dd>600</dd>
+											</div>
+											<div>
+												<dt>battery</dt>
+												<dd>3.6</dd>
+											</div>
+											<div>
+												<dt>fw_ver</dt>
+												<dd>1.23</dd>
+											</div>
+											<div>
+												<dt>distance</dt>
+												<dd>155</dd>
+											</div>
+											<div>
+												<dt>temperature</dt>
+												<dd>25.4</dd>
+											</div>
+										</dl>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="tmd-acc-item card">
+						<div class="tmd-acc-head card-header">
+							<div class="tmd-card" data-line="부산역 - 대티">
+								<div class="tmd-bookmark">
+									<button type="button" class="btn btn-bookmark">
+										<i class="fa fa-heart" aria-hidden="true"></i><span
+											class="sr-only">즐겨찾기</span>
+									</button>
+								</div>
+								<div class="tmd-route">
+									<div class="tmd-track">
+										<div class="tmd-grid">
+											<div class="tmd-row">
+												<!--
+                          상태 구분: unknown|ok|warn|danger (미수신|정상|주의|위험)
+                          상태 적용: .tmd-dotbtn, .tmd-edge (클래스로 상태 표현)
+                          tmd-edge data: data-state, data-from, data-to, data-line (팝오버/로그 메타)
+                          마지막 노드엔 (tmd-pair--last) 클래스 추가
+                          -->
+												<div class="tmd-pair">
+													<div class="tmd-node">
+														<button type="button" class="tmd-dotbtn danger"
+															aria-pressed="false"></button>
+														<span class="tmd-nlabel">부산역</span>
+													</div>
+													<div class="tmd-edge danger" data-state="danger"
+														data-from="부산역" data-to="중앙" data-line="부산역 - 대티"></div>
+												</div>
+
+												<div class="tmd-pair">
+													<div class="tmd-node">
+														<button type="button" class="tmd-dotbtn danger"
+															aria-pressed="false"></button>
+														<span class="tmd-nlabel">중앙</span>
+													</div>
+													<div class="tmd-edge warn" data-state="warn" data-from="중앙"
+														data-to="남포" data-line="부산역 - 대티"></div>
+												</div>
+
+												<div class="tmd-pair">
+													<div class="tmd-node">
+														<button type="button" class="tmd-dotbtn warn"
+															aria-pressed="false"></button>
+														<span class="tmd-nlabel">남포</span>
+													</div>
+													<div class="tmd-edge warn" data-state="warn" data-from="남포"
+														data-to="자갈치" data-line="부산역 - 대티"></div>
+												</div>
+
+												<div class="tmd-pair">
+													<div class="tmd-node">
+														<button type="button" class="tmd-dotbtn warn"
+															aria-pressed="false"></button>
+														<span class="tmd-nlabel">자갈치</span>
+													</div>
+													<div class="tmd-edge danger" data-state="danger"
+														data-from="자갈치" data-to="토성" data-line="부산역 - 대티"></div>
+												</div>
+
+												<div class="tmd-pair">
+													<div class="tmd-node">
+														<button type="button" class="tmd-dotbtn danger"
+															aria-pressed="false"></button>
+														<span class="tmd-nlabel">토성</span>
+													</div>
+													<div class="tmd-edge danger" data-state="danger"
+														data-from="토성" data-to="동대신" data-line="부산역 - 대티"></div>
+												</div>
+
+												<div class="tmd-pair">
+													<div class="tmd-node">
+														<button type="button" class="tmd-dotbtn danger"
+															aria-pressed="false"></button>
+														<span class="tmd-nlabel">동대신</span>
+													</div>
+													<div class="tmd-edge warn" data-state="warn"
+														data-from="동대신" data-to="서대신" data-line="부산역 - 대티"></div>
+												</div>
+
+												<div class="tmd-pair">
+													<div class="tmd-node">
+														<button type="button" class="tmd-dotbtn unknown"
+															aria-pressed="false"></button>
+														<span class="tmd-nlabel">서대신</span>
+													</div>
+													<div class="tmd-edge unknown" data-state="unknown"
+														data-from="서대신" data-to="대티" data-line="부산역 - 대티"></div>
+												</div>
+
+												<!-- 마지막 노드엔 (tmd-pair--last) 클래스 추가 및 tmd-edge 미존재 -->
+												<div class="tmd-pair tmd-pair--last">
+													<div class="tmd-node">
+														<button type="button" class="tmd-dotbtn unknown"
+															aria-pressed="false"></button>
+														<span class="tmd-nlabel">대티</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="tmd-utill">
+									<div class="tmd-status">위험</div>
+									<button type="button" class="btn btn-acco"
+										data-toggle="collapse" data-target="#acc-body-2"
+										aria-expanded="false" aria-controls="acc-body-2">
+										<i class="fa fa-angle-down ml-1"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div id="acc-body-2" class="tmd-acc-body collapse"
+							data-parent="#tmd-acc-list">
+							<div class="tmd-acc-panel card-body">
+								<div class="tmd-sgrid">
+									<!-- 상태 카드 1 : danger -->
+									<div class="tmd-scard danger">
+										<div class="tmd-scard__head">
+											<h4 class="tmd-scard__title">남포</h4>
+											<span class="tmd-scard__badge"><i class="fa fa-bell-o"
+												aria-hidden="true"></i></span>
+										</div>
+										<p class="tmd-scard__route">부산역 → 대티 구간</p>
+										<dl class="tmd-scard__meta">
+											<div>
+												<dt>Device ID</dt>
+												<dd>DEV-421</dd>
+											</div>
+											<div>
+												<dt>범위(S/L/C/NI)</dt>
+												<dd>12 / 34 / 5 / 3</dd>
+											</div>
+										</dl>
+									</div>
+
+									<!-- 상태 카드 2 : warn -->
+									<div class="tmd-scard warn">
+										<div class="tmd-scard__head">
+											<h4 class="tmd-scard__title">대티</h4>
+											<span class="tmd-scard__badge"><i
+												class="fa fa-exclamation" aria-hidden="true"></i></span>
+										</div>
+										<p class="tmd-scard__route">부산역 → 대티 구간</p>
+										<dl class="tmd-scard__meta">
+											<div>
+												<dt>Device ID</dt>
+												<dd>DEV-422</dd>
+											</div>
+											<div>
+												<dt>범위(S/L/C/NI)</dt>
+												<dd>12 / 34 / 5 / 3</dd>
+											</div>
+										</dl>
+									</div>
+
+									<div class="tmd-scard warn">
+										<div class="tmd-scard__head">
+											<h4 class="tmd-scard__title">대티</h4>
+											<span class="tmd-scard__badge"><i
+												class="fa fa-exclamation" aria-hidden="true"></i></span>
+										</div>
+										<p class="tmd-scard__route">부산역 → 대티 구간</p>
+										<dl class="tmd-scard__meta">
+											<div>
+												<dt>Device ID</dt>
+												<dd>DEV-422</dd>
+											</div>
+											<div>
+												<dt>범위(S/L/C/NI)</dt>
+												<dd>12 / 34 / 5 / 3</dd>
+											</div>
+										</dl>
+									</div>
+
+									<div class="tmd-scard warn">
+										<div class="tmd-scard__head">
+											<h4 class="tmd-scard__title">대티</h4>
+											<span class="tmd-scard__badge"><i
+												class="fa fa-exclamation" aria-hidden="true"></i></span>
+										</div>
+										<p class="tmd-scard__route">부산역 → 대티 구간</p>
+										<dl class="tmd-scard__meta">
+											<div>
+												<dt>Device ID</dt>
+												<dd>DEV-422</dd>
+											</div>
+											<div>
+												<dt>범위(S/L/C/NI)</dt>
+												<dd>12 / 34 / 5 / 3</dd>
+											</div>
+										</dl>
+									</div>
+
+									<!-- 상태 카드 3 : ok -->
+									<div class="tmd-scard ok">
+										<div class="tmd-scard__head">
+											<h4 class="tmd-scard__title">토성</h4>
+											<span class="tmd-scard__badge"><i class="fa fa-check"
+												aria-hidden="true"></i></span>
+										</div>
+										<p class="tmd-scard__route">부산역 → 대티 구간</p>
+										<dl class="tmd-scard__meta">
+											<div>
+												<dt>Device ID</dt>
+												<dd>DEV-422</dd>
+											</div>
+											<div>
+												<dt>범위(S/L/C/NI)</dt>
+												<dd>12 / 34 / 5 / 3</dd>
+											</div>
+										</dl>
+									</div>
+
+									<div class="tmd-scard ok">
+										<div class="tmd-scard__head">
+											<h4 class="tmd-scard__title">자갈치</h4>
+											<span class="tmd-scard__badge"><i class="fa fa-check"
+												aria-hidden="true"></i></span>
+										</div>
+										<p class="tmd-scard__route">부산역 → 대티 구간</p>
+										<dl class="tmd-scard__meta">
+											<div>
+												<dt>Device ID</dt>
+												<dd>DEV-422</dd>
+											</div>
+											<div>
+												<dt>범위(S/L/C/NI)</dt>
+												<dd>12 / 34 / 5 / 3</dd>
+											</div>
+										</dl>
+									</div>
+
+									<!-- 상태 카드 4 : unknown -->
+									<div class="tmd-scard unknown">
+										<div class="tmd-scard__head">
+											<h4 class="tmd-scard__title">중앙</h4>
+											<span class="tmd-scard__badge"><i class="fa fa-times"
+												aria-hidden="true"></i></span>
+										</div>
+										<p class="tmd-scard__route">부산역 → 대티 구간</p>
+										<dl class="tmd-scard__meta">
+											<div>
+												<dt>Device ID</dt>
+												<dd>DEV-422</dd>
+											</div>
+											<div>
+												<dt>범위(S/L/C/NI)</dt>
+												<dd>12 / 34 / 5 / 3</dd>
+											</div>
+										</dl>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="tmd-acc-item card">
+						<div class="tmd-acc-head card-header">
+							<div class="tmd-card" data-line="부산역 - 괴정">
+								<div class="tmd-bookmark">
+									<button type="button" class="btn btn-bookmark">
+										<i class="fa fa-heart" aria-hidden="true"></i><span
+											class="sr-only">즐겨찾기</span>
+									</button>
+								</div>
+								<div class="tmd-route">
+									<div class="tmd-track">
+										<div class="tmd-grid">
+											<div class="tmd-row">
+												<!--
+                          상태 구분: unknown|ok|warn|danger (미수신|정상|주의|위험)
+                          상태 적용: .tmd-dotbtn, .tmd-edge (클래스로 상태 표현)
+                          tmd-edge data: data-state, data-from, data-to, data-line (팝오버/로그 메타)
+                          마지막 노드엔 (tmd-pair--last) 클래스 추가
+                          -->
+												<div class="tmd-pair">
+													<div class="tmd-node">
+														<button type="button" class="tmd-dotbtn ok"
+															aria-pressed="false"></button>
+														<span class="tmd-nlabel">LWAC1F09FFFE0A6AF0</span>
+													</div>
+													<div class="tmd-edge ok" data-state="ok" data-from="부산역"
+														data-to="중앙" data-line="부산역 - 괴정"></div>
+												</div>
+
+												<div class="tmd-pair">
+													<div class="tmd-node">
+														<button type="button" class="tmd-dotbtn ok"
+															aria-pressed="false"></button>
+														<span class="tmd-nlabel">중앙</span>
+													</div>
+													<div class="tmd-edge ok" data-state="ok" data-from="중앙"
+														data-to="남포" data-line="부산역 - 괴정"></div>
+												</div>
+
+												<div class="tmd-pair">
+													<div class="tmd-node">
+														<button type="button" class="tmd-dotbtn ok"
+															aria-pressed="false"></button>
+														<span class="tmd-nlabel">남포</span>
+													</div>
+													<div class="tmd-edge ok" data-state="ok" data-from="남포"
+														data-to="자갈치" data-line="부산역 - 괴정"></div>
+												</div>
+
+												<div class="tmd-pair">
+													<div class="tmd-node">
+														<button type="button" class="tmd-dotbtn unknown"
+															aria-pressed="false"></button>
+														<span class="tmd-nlabel">자갈치</span>
+													</div>
+													<div class="tmd-edge unknown" data-state="unknown"
+														data-from="자갈치" data-to="토성" data-line="부산역 - 괴정"></div>
+												</div>
+
+												<div class="tmd-pair">
+													<div class="tmd-node">
+														<button type="button" class="tmd-dotbtn unknown"
+															aria-pressed="false"></button>
+														<span class="tmd-nlabel">토성</span>
+													</div>
+													<div class="tmd-edge unknown" data-state="unknown"
+														data-from="토성" data-to="동대신" data-line="부산역 - 괴정"></div>
+												</div>
+
+												<div class="tmd-pair">
+													<div class="tmd-node">
+														<button type="button" class="tmd-dotbtn warn"
+															aria-pressed="false"></button>
+														<span class="tmd-nlabel">동대신</span>
+													</div>
+													<div class="tmd-edge warn" data-state="warn"
+														data-from="동대신" data-to="서대신" data-line="부산역 - 괴정"></div>
+												</div>
+
+												<div class="tmd-pair">
+													<div class="tmd-node">
+														<button type="button" class="tmd-dotbtn warn"
+															aria-pressed="false"></button>
+														<span class="tmd-nlabel">서대신</span>
+													</div>
+													<div class="tmd-edge warn" data-state="warn"
+														data-from="서대신" data-to="대티" data-line="부산역 - 괴정"></div>
+												</div>
+
+												<div class="tmd-pair">
+													<div class="tmd-node">
+														<button type="button" class="tmd-dotbtn warn"
+															aria-pressed="false"></button>
+														<span class="tmd-nlabel">대티</span>
+													</div>
+													<div class="tmd-edge ok" data-state="ok" data-from="대티"
+														data-to="괴정" data-line="부산역 - 괴정"></div>
+												</div>
+
+												<!-- 마지막 노드엔 (tmd-pair--last) 클래스 추가 및 tmd-edge 미존재 -->
+												<div class="tmd-pair tmd-pair--last">
+													<div class="tmd-node">
+														<button type="button" class="tmd-dotbtn ok"
+															aria-pressed="false"></button>
+														<span class="tmd-nlabel">괴정</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="tmd-utill">
+									<div class="tmd-status"></div>
+									<button type="button" class="btn btn-acco"
+										data-toggle="collapse" data-target="#acc-body-3"
+										aria-expanded="false" aria-controls="acc-body-3">
+										<i class="fa fa-angle-down ml-1"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div id="acc-body-3" class="tmd-acc-body collapse"
+							data-parent="#tmd-acc-list">
+							<div class="tmd-acc-panel card-body">
+								<div class="tmd-sgrid">
+									<!-- 상태 카드 1 : danger -->
+									<div class="tmd-scard danger">
+										<div class="tmd-scard__head">
+											<h4 class="tmd-scard__title">남포</h4>
+											<span class="tmd-scard__badge"><i class="fa fa-bell-o"
+												aria-hidden="true"></i></span>
+										</div>
+										<p class="tmd-scard__route">부산역 → 괴정 구간</p>
+										<dl class="tmd-scard__meta">
+											<div>
+												<dt>Device ID</dt>
+												<dd>DEV-421</dd>
+											</div>
+											<div>
+												<dt>범위(S/L/C/NI)</dt>
+												<dd>12 / 34 / 5 / 3</dd>
+											</div>
+										</dl>
+									</div>
+
+									<!-- 상태 카드 2 : warn -->
+									<div class="tmd-scard warn">
+										<div class="tmd-scard__head">
+											<h4 class="tmd-scard__title">대티</h4>
+											<span class="tmd-scard__badge"><i
+												class="fa fa-exclamation" aria-hidden="true"></i></span>
+										</div>
+										<p class="tmd-scard__route">부산역 → 괴정 구간</p>
+										<dl class="tmd-scard__meta">
+											<div>
+												<dt>Device ID</dt>
+												<dd>DEV-422</dd>
+											</div>
+											<div>
+												<dt>범위(S/L/C/NI)</dt>
+												<dd>12 / 34 / 5 / 3</dd>
+											</div>
+										</dl>
+									</div>
+
+									<div class="tmd-scard warn">
+										<div class="tmd-scard__head">
+											<h4 class="tmd-scard__title">대티</h4>
+											<span class="tmd-scard__badge"><i
+												class="fa fa-exclamation" aria-hidden="true"></i></span>
+										</div>
+										<p class="tmd-scard__route">부산역 → 괴정 구간</p>
+										<dl class="tmd-scard__meta">
+											<div>
+												<dt>Device ID</dt>
+												<dd>DEV-422</dd>
+											</div>
+											<div>
+												<dt>범위(S/L/C/NI)</dt>
+												<dd>12 / 34 / 5 / 3</dd>
+											</div>
+										</dl>
+									</div>
+
+									<div class="tmd-scard warn">
+										<div class="tmd-scard__head">
+											<h4 class="tmd-scard__title">대티</h4>
+											<span class="tmd-scard__badge"><i
+												class="fa fa-exclamation" aria-hidden="true"></i></span>
+										</div>
+										<p class="tmd-scard__route">부산역 → 괴정 구간</p>
+										<dl class="tmd-scard__meta">
+											<div>
+												<dt>Device ID</dt>
+												<dd>DEV-422</dd>
+											</div>
+											<div>
+												<dt>범위(S/L/C/NI)</dt>
+												<dd>12 / 34 / 5 / 3</dd>
+											</div>
+										</dl>
+									</div>
+
+									<!-- 상태 카드 3 : ok -->
+									<div class="tmd-scard ok">
+										<div class="tmd-scard__head">
+											<h4 class="tmd-scard__title">토성</h4>
+											<span class="tmd-scard__badge"><i class="fa fa-check"
+												aria-hidden="true"></i></span>
+										</div>
+										<p class="tmd-scard__route">부산역 → 괴정 구간</p>
+										<dl class="tmd-scard__meta">
+											<div>
+												<dt>Device ID</dt>
+												<dd>DEV-422</dd>
+											</div>
+											<div>
+												<dt>범위(S/L/C/NI)</dt>
+												<dd>12 / 34 / 5 / 3</dd>
+											</div>
+										</dl>
+									</div>
+
+									<div class="tmd-scard ok">
+										<div class="tmd-scard__head">
+											<h4 class="tmd-scard__title">자갈치</h4>
+											<span class="tmd-scard__badge"><i class="fa fa-check"
+												aria-hidden="true"></i></span>
+										</div>
+										<p class="tmd-scard__route">부산역 → 괴정 구간</p>
+										<dl class="tmd-scard__meta">
+											<div>
+												<dt>Device ID</dt>
+												<dd>DEV-422</dd>
+											</div>
+											<div>
+												<dt>범위(S/L/C/NI)</dt>
+												<dd>12 / 34 / 5 / 3</dd>
+											</div>
+										</dl>
+									</div>
+
+									<!-- 상태 카드 4 : unknown -->
+									<div class="tmd-scard unknown">
+										<div class="tmd-scard__head">
+											<h4 class="tmd-scard__title">중앙</h4>
+											<span class="tmd-scard__badge"><i class="fa fa-times"
+												aria-hidden="true"></i></span>
+										</div>
+										<p class="tmd-scard__route">부산역 → 괴정 구간</p>
+										<dl class="tmd-scard__meta">
+											<div>
+												<dt>Device ID</dt>
+												<dd>DEV-422</dd>
+											</div>
+											<div>
+												<dt>범위(S/L/C/NI)</dt>
+												<dd>12 / 34 / 5 / 3</dd>
+											</div>
+										</dl>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="tmd-acc-item card">
+						<div class="tmd-acc-head card-header">
+							<div class="tmd-card" data-line="부산역 - 동대신">
+								<div class="tmd-bookmark">
+									<button type="button" class="btn btn-bookmark">
+										<i class="fa fa-heart" aria-hidden="true"></i><span
+											class="sr-only">즐겨찾기</span>
+									</button>
+								</div>
+								<div class="tmd-route">
+									<div class="tmd-track">
+										<div class="tmd-grid">
+											<div class="tmd-row">
+												<!--
+                          상태 구분: unknown|ok|warn|danger (미수신|정상|주의|위험)
+                          상태 적용: .tmd-dotbtn, .tmd-edge (클래스로 상태 표현)
+                          tmd-edge data: data-state, data-from, data-to, data-line (팝오버/로그 메타)
+                          마지막 노드엔 (tmd-pair--last) 클래스 추가
+                          -->
+												<div class="tmd-pair">
+													<div class="tmd-node">
+														<button type="button" class="tmd-dotbtn warn"
+															aria-pressed="false"></button>
+														<span class="tmd-nlabel">부산역</span>
+													</div>
+													<div class="tmd-edge warn" data-state="warn"
+														data-from="부산역" data-to="중앙" data-line="부산역 - 동대신"></div>
+												</div>
+
+												<div class="tmd-pair">
+													<div class="tmd-node">
+														<button type="button" class="tmd-dotbtn warn"
+															aria-pressed="false"></button>
+														<span class="tmd-nlabel">중앙</span>
+													</div>
+													<div class="tmd-edge warn" data-state="warn" data-from="중앙"
+														data-to="남포" data-line="부산역 - 동대신"></div>
+												</div>
+
+												<div class="tmd-pair">
+													<div class="tmd-node">
+														<button type="button" class="tmd-dotbtn ok"
+															aria-pressed="false"></button>
+														<span class="tmd-nlabel">남포</span>
+													</div>
+													<div class="tmd-edge ok" data-state="ok" data-from="남포"
+														data-to="자갈치" data-line="부산역 - 동대신"></div>
+												</div>
+
+												<div class="tmd-pair">
+													<div class="tmd-node">
+														<button type="button" class="tmd-dotbtn unknown"
+															aria-pressed="false"></button>
+														<span class="tmd-nlabel">자갈치</span>
+													</div>
+													<div class="tmd-edge unknown" data-state="unknown"
+														data-from="자갈치" data-to="토성" data-line="부산역 - 동대신"></div>
+												</div>
+
+												<div class="tmd-pair">
+													<div class="tmd-node">
+														<button type="button" class="tmd-dotbtn unknown"
+															aria-pressed="false"></button>
+														<span class="tmd-nlabel">토성</span>
+													</div>
+													<div class="tmd-edge ok" data-state="ok" data-from="토성"
+														data-to="동대신" data-line="부산역 - 동대신"></div>
+												</div>
+
+												<!-- 마지막 노드엔 (tmd-pair--last) 클래스 추가 및 tmd-edge 미존재 -->
+												<div class="tmd-pair tmd-pair--last">
+													<div class="tmd-node">
+														<button type="button" class="tmd-dotbtn ok"
+															aria-pressed="false"></button>
+														<span class="tmd-nlabel">동대신</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="tmd-utill">
+									<div class="tmd-status"></div>
+									<button type="button" class="btn btn-acco"
+										data-toggle="collapse" data-target="#acc-body-4"
+										aria-expanded="false" aria-controls="acc-body-4">
+										<i class="fa fa-angle-down ml-1"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div id="acc-body-4" class="tmd-acc-body collapse"
+							data-parent="#tmd-acc-list">
+							<div class="tmd-acc-panel card-body">
+								<div class="tmd-sgrid">
+									<!-- 상태 카드 1 : danger -->
+									<div class="tmd-scard danger">
+										<div class="tmd-scard__head">
+											<h4 class="tmd-scard__title">남포</h4>
+											<span class="tmd-scard__badge"><i class="fa fa-bell-o"
+												aria-hidden="true"></i></span>
+										</div>
+										<p class="tmd-scard__route">부산역 → 동대신 구간</p>
+										<dl class="tmd-scard__meta">
+											<div>
+												<dt>Device ID</dt>
+												<dd>DEV-421</dd>
+											</div>
+											<div>
+												<dt>범위(S/L/C/NI)</dt>
+												<dd>12 / 34 / 5 / 3</dd>
+											</div>
+										</dl>
+									</div>
+
+									<!-- 상태 카드 2 : warn -->
+									<div class="tmd-scard warn">
+										<div class="tmd-scard__head">
+											<h4 class="tmd-scard__title">대티</h4>
+											<span class="tmd-scard__badge"><i
+												class="fa fa-exclamation" aria-hidden="true"></i></span>
+										</div>
+										<p class="tmd-scard__route">부산역 → 동대신 구간</p>
+										<dl class="tmd-scard__meta">
+											<div>
+												<dt>Device ID</dt>
+												<dd>DEV-422</dd>
+											</div>
+											<div>
+												<dt>범위(S/L/C/NI)</dt>
+												<dd>12 / 34 / 5 / 3</dd>
+											</div>
+										</dl>
+									</div>
+
+									<div class="tmd-scard warn">
+										<div class="tmd-scard__head">
+											<h4 class="tmd-scard__title">대티</h4>
+											<span class="tmd-scard__badge"><i
+												class="fa fa-exclamation" aria-hidden="true"></i></span>
+										</div>
+										<p class="tmd-scard__route">부산역 → 동대신 구간</p>
+										<dl class="tmd-scard__meta">
+											<div>
+												<dt>Device ID</dt>
+												<dd>DEV-422</dd>
+											</div>
+											<div>
+												<dt>범위(S/L/C/NI)</dt>
+												<dd>12 / 34 / 5 / 3</dd>
+											</div>
+										</dl>
+									</div>
+
+									<div class="tmd-scard warn">
+										<div class="tmd-scard__head">
+											<h4 class="tmd-scard__title">대티</h4>
+											<span class="tmd-scard__badge"><i
+												class="fa fa-exclamation" aria-hidden="true"></i></span>
+										</div>
+										<p class="tmd-scard__route">부산역 → 동대신 구간</p>
+										<dl class="tmd-scard__meta">
+											<div>
+												<dt>Device ID</dt>
+												<dd>DEV-422</dd>
+											</div>
+											<div>
+												<dt>범위(S/L/C/NI)</dt>
+												<dd>12 / 34 / 5 / 3</dd>
+											</div>
+										</dl>
+									</div>
+
+									<!-- 상태 카드 3 : ok -->
+									<div class="tmd-scard ok">
+										<div class="tmd-scard__head">
+											<h4 class="tmd-scard__title">토성</h4>
+											<span class="tmd-scard__badge"><i class="fa fa-check"
+												aria-hidden="true"></i></span>
+										</div>
+										<p class="tmd-scard__route">부산역 → 동대신 구간</p>
+										<dl class="tmd-scard__meta">
+											<div>
+												<dt>Device ID</dt>
+												<dd>DEV-422</dd>
+											</div>
+											<div>
+												<dt>범위(S/L/C/NI)</dt>
+												<dd>12 / 34 / 5 / 3</dd>
+											</div>
+										</dl>
+									</div>
+
+									<div class="tmd-scard ok">
+										<div class="tmd-scard__head">
+											<h4 class="tmd-scard__title">자갈치</h4>
+											<span class="tmd-scard__badge"><i class="fa fa-check"
+												aria-hidden="true"></i></span>
+										</div>
+										<p class="tmd-scard__route">부산역 → 동대신 구간</p>
+										<dl class="tmd-scard__meta">
+											<div>
+												<dt>Device ID</dt>
+												<dd>DEV-422</dd>
+											</div>
+											<div>
+												<dt>범위(S/L/C/NI)</dt>
+												<dd>12 / 34 / 5 / 3</dd>
+											</div>
+										</dl>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Popover -->
+	<div class="tmd-popover" id="tmd-popover" hidden>
+		<div class="tmd-sheet" role="dialog" aria-modal="false"
+			aria-labelledby="tmd-p-title">
+			<div class="thd-shhet-header">
+				<h3 id="tmd-p-title" class="tmd-p-title">센서 기본값</h3>
+				<button class="tmd-close" id="tmd-p-close" aria-label="닫기">✕</button>
+			</div>
+			<dl class="tmd-kv">
+				<dt>노선</dt>
+				<dd id="tmd-p-line">-</dd>
+				<dt>구간</dt>
+				<dd id="tmd-p-seg">-</dd>
+				<dt>상태</dt>
+				<dd id="tmd-p-state">-</dd>
+				<dt>최근 측정</dt>
+				<dd id="tmd-p-last">-</dd>
+				<dt>ID</dt>
+				<dd id="tmd-p-id">-</dd>
+				<dt>Nickname</dt>
+				<dd id="tmd-p-nick">-</dd>
+				<dt>Device ID</dt>
+				<dd id="tmd-p-device">-</dd>
+				<dt>Tension Type</dt>
+				<dd id="tmd-p-type">-</dd>
+			</dl>
+		</div>
+	</div>
+
+	<!-- 반복 시간 설정(small) -->
+	<div class="modal inmodal js-draggable-modal" id="popupSetTime1"
+		tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header js-drag-handle">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+					</button>
+					<h4 class="modal-title">반복 시간 설정</h4>
+				</div>
+				<div class="modal-body">
+					<div class="ibox-content m-b-sm border-bottom">
+						<div class="form-colgroup">
+							<label for="nameEl" class="col-form-label">시간 설정</label>
+							<div class="input-group">
+								<input type="text" id="nameEl" placeholder=""
+									class="form-control">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">저장</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 반복 시간 설정 팝업 -->
+	<div class="modal inmodal js-draggable-modal" id="popupSetTime2"
+		tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<div class="modal-header js-drag-handle">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+					</button>
+					<h4 class="modal-title">반복 시간 설정</h4>
+				</div>
+				<div class="modal-body">
+					<div class="ibox-content m-b-sm border-bottom">
+						<div class="form-rowgroup">
+							<label for="nameEl" class="col-form-label">시간 설정</label>
+							<div class="input-group">
+								<input type="text" id="nameEl" placeholder=""
+									class="form-control">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">저장</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //반복 시간 설정 팝업 -->
+
+	<!-- 도메인 상세 팝업 -->
+	<div class="modal inmodal js-draggable-modal" id="modal_inputUpdate"
+		tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-xlg">
+			<div class="modal-content">
+				<div class="modal-header js-drag-handle">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+					</button>
+					<h4 class="modal-title" id="tit_modal_inputUpdate">도메인 상세페이지</h4>
+				</div>
+				<input type="hidden" id="inputUpdate_division"
+					name="inputUpdate_division" />
+				<!-- 도메인 상세 -->
+				<div class="modal-body" id="domain">
+					<div class="tbl-wrap">
+						<div class="tbl-title">
+							<p>도메인 정보</p>
+							<button id="popup_domain_save_btn" class="btn btn-primary btn-md">수정</button>
+							<!-- btn-[xs | sm | md | lg] 클래스로 버튼 사이즈 크기 조정 -->
+						</div>
+						<form id="domain_input">
+							<input type="hidden" id="domain_input_domainId" name="domainId" />
+							<table class="table table-bordered">
+								<colgroup>
+									<col style="width: 20%;">
+									<col style="width: 30%;">
+									<col style="width: 20%;">
+									<col style="width: 30%;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>도메인 명</th>
+										<td colspan="3">
+											<div class="form-group">
+												<input type="text" id="domain_input_domainNm"
+													name="domainNm" class="form-control require" title="도메인 명"
+													value="도메인명테스트도메인명테스트테스트테스트" placeholder="도메인 명을 입력해주세요" />
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>도메인 제목</th>
+										<td colspan="3">
+											<div class="form-group">
+												<input type="text" id="domain_input_domainTitle"
+													name="domainTitle" class="form-control require"
+													title="도메인 제목" value="readonly readonly"
+													readonly="readonly" placeholder="도메인 제목을 입력해주세요" />
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>DATA(T)</th>
+										<td>
+											<div class="form-group">
+												<input type="text" id="domain_input_dataT" name="dataT"
+													class="form-control require" title="데이터 정보 TYPE"
+													placeholder="데이터 정보 TYPE을 입력해주세요" />
+											</div>
+										</td>
+										<th>DATA(V)</th>
+										<td>
+											<div class="form-group">
+												<input type="text" id="domain_input_dataV" name="dataV"
+													class="form-control require" title="데이터 정보 VALUE"
+													placeholder="데이터 정보 VALUE를 입력해주세요" />
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>DATA(L)</th>
+										<td colspan="">
+											<!-- colspan 없이 input 사이즈 위 tr과 동일하도록 배치 -->
+											<div class="form-group">
+												<input type="text" id="domain_input_dataL" name="dataL"
+													class="form-control require" title="데이터 정보 LENGTH"
+													placeholder="데이터 정보 LENGTH를 입력해주세요" />
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>메인 내 로고 이미지</th>
+										<td>
+											<div class="form-rowgroup">
+												<input type="text" class="form-control"
+													id="domain_input_mainLogoNm" name="mainLogoNm" />
+												<button id="mainLogoBtn" type="button"
+													class="btn btn-outline btn-primary btn-xs">업로드</button>
+												<input type="hidden" id="mainLogoImg" name="mainLogo" /> <input
+													type="file" id="domain_input_mainLogo" class="form-control"
+													title="사이트 내 페이지 로고 이미지" accept="image/*"
+													style="display: none;" />
+											</div>
+										</td>
+										<th>사이트 내 로고 이미지</th>
+										<td>
+											<div class="form-rowgroup">
+												<input type="text" class="form-control"
+													id="domain_input_siteLogoNm" name="siteLogoNm" />
+												<button id="siteLogoBtn" type="button"
+													class="btn btn-outline btn-primary btn-xs">업로드</button>
+												<input type="hidden" id="siteLogoImg" name="siteLogo" /> <input
+													type="file" id="domain_input_siteLogo" class="form-control"
+													title="사이트 내 페이지 로고 이미지" accept="image/*"
+													style="display: none;" />
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</form>
+					</div>
+				</div>
+				<!-- 도메인 상세 -->
+
+				<!-- 사이트 상세 -->
+				<div class="modal-body" id="site">
+					<div class="tbl-wrap">
+						<div class="tbl-title">
+							<p>사이트 정보</p>
+							<button id="popup_site_save_btn" class="btn btn-primary btn-xs">수정</button>
+						</div>
+						<form id="site_input">
+							<input type="hidden" id="site_input_domainId" name="domainId" />
+							<input type="hidden" id="site_input_siteId" name="siteId" />
+							<table class="table table-bordered">
+								<colgroup>
+									<col style="width: 20%;">
+									<col style="width: 30%;">
+									<col style="width: 20%;">
+									<col style="width: 30%;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>도메인</th>
+										<td colspan="3">
+											<div class="input-group">
+												<input type="text" id="site_input_domainNm" name="domainNm"
+													class="form-control require" title="도메인"
+													placeholder="도메인을 검색해주세요" readonly />
+												<button type="button"
+													class="btn btn-outline btn-primary btn-xs m-l-xs"
+													data-toggle="modal" data-target="#modal_domainList">검색</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>사용자 소속</th>
+										<td>
+											<div class="form-rowgroup">
+												<select id="site_input_regionCd" name="regionCd"
+													class="form-control require" title="사용자 소속 지역">
+													<option value="<c:out value='${item.p_cd}'/>"><c:out
+															value='${item.cd_nm}' />옵션
+													</option>
+													<option value="<c:out value='${item.p_cd}'/>"><c:out
+															value='${item.cd_nm}' />옵션2
+													</option>
+												</select> <select id="site_input_affiliationCd" name="affiliationCd"
+													class="form-control require" title="사용자 소속 과">
+													<option value="<c:out value='${item.p_cd}'/>"><c:out
+															value='${item.cd_nm}' />옵션1
+													</option>
+													<option value="<c:out value='${item.p_cd}'/>"><c:out
+															value='${item.cd_nm}' />옵션2
+													</option>
+												</select>
+											</div>
+										</td>
+										<th>면적</th>
+										<td>
+											<div class="form-group">
+												<input type="text" id="site_input_area" name="area"
+													class="form-control require" title="면적"
+													placeholder="면적을 입력해주세요" />
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>구분</th>
+										<td>
+											<div class="form-group">
+												<select id="site_input_divisionCd" name="divisionCd"
+													class="form-control require" title="구분">
+													<c:forEach var="item" items="${dvsCdList }">
+														<option value="<c:out value='${item.p_cd}'/>"><c:out
+																value='${item.cd_nm}' /></option>
+													</c:forEach>
+												</select>
+											</div>
+										</td>
+										<th>관리호</th>
+										<td><input type="text" id="site_input_siteMngNum"
+											name="siteMngNum" class="form-control require" title="관리호"
+											placeholder="관리호를 입력해주세요" /></td>
+									</tr>
+									<tr>
+										<th>주소</th>
+										<td colspan="3">
+											<div class="form-rowgroup">
+												<input type="text" id="site_input_mainAddress"
+													name="mainAddress" class="form-control require"
+													title="메인 주소" placeholder="메인 주소를 입력해주세요" /> <input
+													type="text" id="site_input_detailAddress"
+													name="detailAddress" class="form-control require"
+													title="상세 주소" placeholder="상세 주소를 입력해주세요" />
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</form>
+					</div>
+				</div>
+				<!-- 사이트 상세 -->
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-white" data-dismiss="modal">닫기</button>
+					<button type="button" class="btn btn-primary" data-dismiss="modal">저장</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //도메인 상세 팝업 -->
+
+	<!-- 
+	<sec:authorize access="hasRole('AuthType01')">
+		<h4>최고 관리자는 여기 오는거 아니얌~~ 반칙!!</h4>
+	</sec:authorize>
+	<sec:authorize access="hasRole('AuthType02')">
+		<h4>관리자님 어여 오셔용</h4>
+	</sec:authorize>
+	<h1>
+		<sec:authentication property="name" />
+		관리자님
+	</h1>
+	<a href="javascript:history.back()">뒤로가깅</a>
+	<form action="/logout" method="post">
+		<sec:csrfInput />
+		<button>로그아웃</button>
+	</form>
+ -->
+
+	<!-- libs -->
+	<script src="<c:url value='/js/popper.min.js' />"></script>
+	<script src="<c:url value='/js/bootstrap.js' />"></script>
+	<script
+		src="<c:url value='/js/plugins/metisMenu/jquery.metisMenu.js' />"></script>
+	<script
+		src="<c:url value='/js/plugins/slimscroll/jquery.slimscroll.min.js' />"></script>
+	<script src="<c:url value='/js/inspinia.js' />"></script>
+	<script src="<c:url value='/js/plugins/pace/pace.min.js' />"></script>
+	<script src="<c:url value='/js/plugins/jquery-ui/jquery-ui.min.js' />"></script>
+	<script src="<c:url value='/js/plugins/toastr/toastr.min.js' />"></script>
+	<script
+		src="<c:url value='/js/plugins/sweetalert/sweetalert.min.js' />"></script>
+
+	<!-- Page scripts -->
+	<script>
+    // SweetAlert 설정
+    $('#alert1').click(function () {
+        swal({
+            title: "Alert Title",
+            text: "설정 하시겠습니까?",
+            showCancelButton: true,
+            confirmButtonColor: "#50596c",
+            confirmButtonText: "확인",
+            cancelButtonText: "취소"
+        });
+    });
+
+    // (옵션) Toastr 데모
+    $(function () { toastr.options = { positionClass: "toast-top-right", timeOut: 3000 }; toastr.error("에러형 토스트 예시"); });
+  </script>
+
+	<script>
+    (function ($) {
+      $(document).ready(function () {
+      
+        // 모든 tmd-acc-item 요소를 반복
+        document.querySelectorAll('.tmd-acc-item').forEach(accItem => {
+        // tmd-sgrid 내부의 tmd-scard 요소들 중 'danger' 클래스를 가진 카드가 있는지 확인
+        const hasDangerCard = Array.from(accItem.querySelectorAll('.tmd-scard')).some(card => card.classList.contains('danger'));
+        
+        // 'danger' 클래스를 가진 카드가 하나라도 있으면 해당 tmd-status에 '위험' 텍스트 추가
+        if (hasDangerCard) {
+          const status = accItem.querySelector('.tmd-status');
+          if (status) {
+            status.textContent = '위험';  // '위험' 텍스트로 변경
+            status.style.display = 'block';  // 텍스트를 보이게 설정
+          }
+        }
+      });
+      
+        var TMD = window.TMD || {}; window.TMD = TMD;
+
+        /* =========================
+          Theme Module
+        ========================= */
+        TMD.Theme = (function(){
+            var KEY = 'tmd-theme';
+            function setTheme(t){
+                $('body').attr('data-theme', t);
+                try { localStorage.setItem(KEY, t); } catch(e) {}
+                var $btn = $('#tmd-theme-toggle');
+                if (!$btn.length) return;
+                var isDark = (t === 'dark');
+                $btn.attr('aria-pressed', String(isDark));
+                var $icon = $btn.find('i');
+                if ($icon.length) $icon.attr('class', isDark ? 'fa fa-sun-o' : 'fa fa-moon-o');
+            }
+
+            function loadTheme(){
+                var t = null;
+                try { t = localStorage.getItem(KEY); } catch (e) {}
+                if (!t) t = $('body').attr('data-theme') || 'light';
+                setTheme(t);
+            }
+
+            function toggleTheme(){
+                var cur = ($('body').attr('data-theme') === 'dark') ? 'dark' : 'light';
+                setTheme(cur === 'dark' ? 'light' : 'dark');
+            }
+
+            function init(btnSel){
+                loadTheme();
+                $(document).on('click', btnSel || '#tmd-theme-toggle', toggleTheme);
+            }
+
+            return { setTheme: setTheme, loadTheme: loadTheme, toggleTheme: toggleTheme, init: init };
+        })();
+
+        /* =========================
+          Popover Module
+          - 상태 표시는 요소의 상태 클래스(.ok|.warn|.danger|.unknown)만을 기준으로 함
+          - .tmd-edge data-* (data-state, data-from, data-to, data-line)는 팝오버/로그용 보조 메타
+        ========================= */
+        TMD.Popover = (function(){
+            var $pop, $sheet, lockMode = false, anchorEl = null, anchorPayload = null;
+
+            var MODE_CLASSES = 'mode-hover mode-click';
+            function setMode(mode){ 
+              if(!$pop || !$pop.length) return;
+              $pop.removeClass(MODE_CLASSES);
+              if (mode) $pop.addClass('mode-' + mode);
+            }
+
+            function labelOf(s) {
+                return s === 'ok' ? '정상' : s === 'warn' ? '주의' : s === 'danger' ? '위험' : '미수신';
+            }
+
+            function stateFromClass(el) {
+                if (!el) return 'unknown';
+                var $el = $(el);
+                if ($el.hasClass('danger')) return 'danger';
+                if ($el.hasClass('warn')) return 'warn';
+                if ($el.hasClass('ok')) return 'ok';
+                return 'unknown';
+            }
+
+            function getEdgePayload($edge) {
+                var $card = $edge.closest('.tmd-card');
+                return {
+                    line: $edge.data('line') || ($card.length ? $card.data('line') : '-') || '-',
+                    from: $edge.data('from') || '-',
+                    to: $edge.data('to') || '-',
+                    state: $edge.data('state') || stateFromClass($edge[0])
+                };
+            }
+
+            // 상태 클래스 토글 헬퍼
+            function setStateClass($el, state){
+              var s = (state === 'ok' || state === 'warn' || state === 'danger') ? state : 'unknown';
+              $el.removeClass('is-ok is-warn is-danger is-unknown').addClass('is-' + s).attr('data-state', s);
+            }
+
+            function fill(data) {
+              var s = data.state || 'unknown';
+
+              $('#tmd-p-line').text(data.line || '-');
+              $('#tmd-p-seg').text(data.segment || (data.from ? (data.from + ' → ' + data.to) : '-'));
+
+              // 상태 텍스트 + 상태 클래스 동기화
+              var $state = $('#tmd-p-state');
+              $state.text(labelOf(s));
+              setStateClass($state, s);  // ← 상태별 is-ok / is-warn / is-danger / is-unknown
+
+              $('#tmd-p-last').text(data.last || new Date().toLocaleString());
+              // 데모 필드(실데이터 연동 시 교체)
+              $('#tmd-p-id').text('S-0001');
+              $('#tmd-p-nick').text('센서A');
+              $('#tmd-p-device').text('DEV-42');
+              $('#tmd-p-type').text('Spring');
+            }
+
+            function openAt(x, y, payload) {
+                fill(payload);
+                $pop.prop('hidden', false);
+                $sheet.css({ top: Math.max(12, y + 10), left: Math.min($(window).width() - 300, x + 12) });
+            }
+
+            function openByAnchor(anchor, payload) {
+                fill(payload);
+                var r = anchor.getBoundingClientRect();
+                $pop.prop('hidden', false);
+                $sheet.css({ top: Math.max(12, r.top - 6), left: Math.min($(window).width() - 300, r.left + r.width + 10) });
+            }
+
+            function saveAnchor(anchor, payload) {
+                anchorEl = anchor;
+                anchorPayload = payload;
+                lockMode = true;
+            }
+
+            function restoreAnchor() {
+              if (lockMode && anchorEl) {
+                setMode('click');            // 고정 모드 유지
+                openByAnchor(anchorEl, anchorPayload);
+              }
+            }
+
+            function close() {
+              lockMode = false;
+              anchorEl = null;
+              anchorPayload = null;
+              setMode(null);                 // 모드 클래스 제거
+              $pop.prop('hidden', true);
+            }
+
+            function bind() {
+              // 엣지: hover/이동/leave/클릭
+              $(document)
+                  .on('mouseenter', '.tmd-edge', function (e) {
+                      // [옵션] 고정 중(edge hover) 팝오버 닫기 → 필요하면 주석 해제
+                      // if (lockMode) return close();
+                      setMode('hover');
+                      openAt(e.clientX, e.clientY, getEdgePayload($(this)));
+                  })
+                .on('mousemove', '.tmd-edge', function (e) {
+                  if ($pop.prop('hidden')) return;
+                  $sheet.css({ top: e.clientY + 10, left: Math.min($(window).width() - 300, e.clientX + 12) });
+                })
+                .on('mouseleave', '.tmd-edge', function () {
+                  if (lockMode) {
+                    setMode('click');
+                    restoreAnchor();
+                  } else {
+                    setMode(null);
+                    $pop.prop('hidden', true);
+                  }
+                })
+                .on('click', '.tmd-edge', function (e) {
+                  setMode('click');
+                  openAt(e.clientX, e.clientY, getEdgePayload($(this)));
+                });
+
+                // 노드 클릭 → 고정모드
+                $(document).on('click', '.tmd-node', function () {
+                  var $node = $(this), $btn = $node.find('.tmd-dotbtn');
+                  var seg = $.trim($node.find('.tmd-nlabel').text());
+                  var line = $node.closest('.tmd-card').data('line') || '-';
+                  var m = ($btn.attr('class') || '').match(/\b(ok|warn|danger|unknown)\b/);
+                  var state = (m && m[1]) ? m[1] : 'unknown';
+                  var payload = { line: line, segment: seg, state: state, last: new Date().toLocaleString() };
+                  saveAnchor($btn[0] || this, payload);
+                  setMode('click');
+                  openByAnchor(anchorEl, anchorPayload);
+                });
+
+              // 닫기
+              $(document).on('click', '#tmd-p-close', close);
+              $(document).on('keydown', function (e) { if (e.key === 'Escape') close(); });
+              $(document).on('mousedown', function (e) {
+                  if (!$pop.prop('hidden') && !$sheet[0].contains(e.target)) close();
+              });
+            }
+
+            function init() {
+                $pop = $('#tmd-popover');
+                $sheet = $pop.find('.tmd-sheet');
+                bind();
+            }
+
+            return { init: init, openAt: openAt, openByAnchor: openByAnchor, close: close };
+        })();
+
+        // 즐겨찾기 토글 (아이콘: fa-heart-o ↔ fa-heart)
+        function bindBookmark() {
+            // Toastr 기본 옵션 (있을 때만)
+            if (window.toastr) {
+                toastr.options = $.extend({}, toastr.options, {
+                    positionClass: "toast-top-right",
+                    timeOut: 1200,
+                    preventDuplicates: true
+                });
+            }
+
+            $(document).on('click', '.tmd-bookmark .btn-bookmark', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                var $btn = $(this);
+                var $i = $btn.find('i');
+                var added;
+
+                if ($i.hasClass('fa-heart')) {
+                    // 해제: 채움 → 외곽
+                    $i.removeClass('fa-heart').addClass('fa-heart-o');
+                    $btn.attr('aria-pressed', 'false');
+                    added = false;
+                } else {
+                    // 설정: 외곽 → 채움
+                    $i.removeClass('fa-heart-o').addClass('fa-heart');
+                    $btn.attr('aria-pressed', 'true');
+                    added = true;
+                }
+
+                // 토스트 알림
+                if (window.toastr) {
+                    var msg = added ? '즐겨찾기가 추가되었습니다' : '즐겨찾기가 해제되었습니다';
+                    toastr[added ? 'success' : 'info'](msg);
+                }
+            });
+        }
+
+        /* =========================
+          Init
+        ========================= */
+        TMD.Theme.init('#tmd-theme-toggle');
+        TMD.Popover.init();
+
+        // 북마크 토글
+        bindBookmark();
+      });
+    })(jQuery);
+  </script>
+</body>
+</html>
