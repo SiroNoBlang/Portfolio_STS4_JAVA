@@ -2,7 +2,7 @@ JAVA VERSION : JAVA17
 
 DATABASE : MariaDB
 
-Marketplace
+Marketplace에서 설치 해둘 것
 1. Eclipse Enterprise Java and Web Developer Tools 3.39
 2. MyBatipse 1.2.5
 
